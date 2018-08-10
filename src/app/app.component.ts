@@ -3,6 +3,29 @@ import { Component } from '@angular/core';
 import * as L from 'leaflet';
 import * as esri from 'esri-leaflet';
 
+type RetailerProperties = {
+  ADDRESS: string;
+  ADDRESS2: string;
+  CITY: string;
+  County: string;
+  OBJECTID: number;
+  STATE: string;
+  STORE_NAME: string;
+  ZIP5: number;
+  latitude: number;
+  longitude: number;
+  zip4: string;
+};
+
+const markerOptions: L.MarkerOptions = {
+  icon: L.icon({
+    iconSize: [25, 41],
+    iconAnchor: [12, 10],
+    iconUrl: 'assets/marker-icon.png',
+    shadowUrl: 'assets/marker-shadow.png'
+  })
+};
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -33,9 +56,20 @@ export class AppComponent {
 
       esri.query({
         url: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/ArcGIS/rest/services/retailer/MapServer/0'
-      }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection, fields: any) => {
+      }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
+        for (const feature of geoJson.features) {
+          const coordinates: [number, number] = [feature.properties.latitude, feature.properties.longitude];
+          const marker = L.marker(coordinates, markerOptions).addTo(map)
+            .bindPopup(`
+              <strong>${feature.properties.STORE_NAME}</strong><br />
+              <br />
+              <strong>Address</strong><br />
+              ${feature.properties.ADDRESS}<br />
+              ${feature.properties.ADDRESS2 ? (feature.properties.ADDRESS2 + '<br />') : ''}
+              ${feature.properties.CITY}, ${feature.properties.STATE} ${feature.properties.ZIP5}
+            `);
+        }
         console.log(geoJson);
-        console.log(fields);
       });
     };
 
