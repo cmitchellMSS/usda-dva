@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    LeafletModule
+    LeafletModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
