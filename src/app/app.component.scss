@@ -14,4 +14,13 @@
 
 #main-content {
   flex: 1;
+  display: flex;
+}
+
+app-snap-map {
+  flex: 1;
+}
+
+app-locations-panel {
+  flex: 0 0 300px;
 }
