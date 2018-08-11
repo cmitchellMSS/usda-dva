@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/**
+ * Overrides for the USWDS to make the page work full width.
+ */
+
+.usa-banner-inner {
+  max-width: 100% !important;
+}
+
+@media screen and (min-width: 951px) {
+  .usa-nav-container {
+    max-width: 100% !important;
+  }
+
+  .usa-header-basic .usa-navbar {
+    width: 50% !important;
+  }
+}
+
+.usa-logo-img {
+  height: 28px;
+}

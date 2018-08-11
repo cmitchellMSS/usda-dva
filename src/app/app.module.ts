@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppComponent } from './app.component';
+import { SnapMapComponent } from './snap-map/snap-map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SnapMapComponent
   ],
   imports: [
     BrowserModule,
