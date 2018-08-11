@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import * as L from 'leaflet';
 import * as esri from 'esri-leaflet';
+import { throttle } from 'lodash';
 
 type RetailerProperties = {
   ADDRESS: string;
@@ -40,37 +41,48 @@ export class SnapMapComponent {
     center: L.latLng(38.957189, -77.352262)
   };
 
+  markers: L.LayerGroup;
+
   onMapReady(map: L.Map) {
-    const getCoordsBar = L.DomUtil.create('div', 'leaflet-bar leaflet-control') as HTMLDivElement;
-    const getCoordsButton = L.DomUtil.create('a', null, getCoordsBar) as HTMLAnchorElement;
-    getCoordsButton.innerText = 'CO';
-    getCoordsButton.setAttribute('role', 'button');
-    getCoordsButton.href = '#';
-    getCoordsButton.onclick = (ev: MouseEvent) => {
-      const bounds = map.getBounds();
+    // Layer to keep track of markers for easy removal
+    this.markers = L.layerGroup().addTo(map);
 
-      esri.query({
-        url: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/ArcGIS/rest/services/retailer/MapServer/0'
-      }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
-        for (const feature of geoJson.features) {
-          const coordinates: [number, number] = [feature.properties.latitude, feature.properties.longitude];
-          const marker = L.marker(coordinates, markerOptions).addTo(map)
-            .bindPopup(`
-              <strong>${feature.properties.STORE_NAME}</strong><br />
-              <br />
-              <strong>Address</strong><br />
-              ${feature.properties.ADDRESS}<br />
-              ${feature.properties.ADDRESS2 ? (feature.properties.ADDRESS2 + '<br />') : ''}
-              ${feature.properties.CITY}, ${feature.properties.STATE} ${feature.properties.ZIP5}
-            `);
-        }
-        console.log(geoJson);
+    // Attempt to user the browsers geolocation to set the map location
+    if (navigator && navigator.geolocation && navigator.geolocation.getCurrentPosition) {
+      navigator.geolocation.getCurrentPosition(position => {
+        map.setView({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude,
+        }, 15);
       });
-    };
+    }
 
-    let info = new L.Control();
-    info.onAdd = () => getCoordsBar;
+    // Update pins when the map view changes
+    const boundUpdatePins = this.updatePins.bind(this, map);
+    const throttledUpdatePins = throttle(boundUpdatePins, 1000, { leading: false });
+    map.on('move', throttledUpdatePins);
+  }
 
-    info.addTo(map);
+  updatePins(map: L.Map) {
+    const bounds = map.getBounds();
+    esri.query({
+      url: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/ArcGIS/rest/services/retailer/MapServer/0'
+    }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
+      this.markers.clearLayers();
+      for (const feature of geoJson.features) {
+        const coordinates: [number, number] = [feature.properties.latitude, feature.properties.longitude];
+        const marker = L.marker(coordinates, markerOptions)
+          .addTo(this.markers)
+          .bindPopup(`
+            <strong>${feature.properties.STORE_NAME}</strong><br />
+            <br />
+            <strong>Address</strong><br />
+            ${feature.properties.ADDRESS}<br />
+            ${feature.properties.ADDRESS2 ? (feature.properties.ADDRESS2 + '<br />') : ''}
+            ${feature.properties.CITY}, ${feature.properties.STATE} ${feature.properties.ZIP5}
+          `);
+      }
+      console.log(geoJson);
+    });
   }
 }
