@@ -1,4 +1,5 @@
-import express, { Application } from 'express';
+import express, { Application, Request } from 'express';
+import proxy from 'http-proxy-middleware';
 
 import { WelcomeController } from './controllers';
 
@@ -7,7 +8,10 @@ const app = express();
 // The port the express app will listen on
 const port = process.env.PORT || 3000;
 
-// Mount the WelcomeController at the /welcome route
+// Proxy for data coming from USDA ArcGIS retailers
+const argGisRetailersProxy = proxy('/ArcGIS', { target: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/', logLevel: 'debug' });
+app.use(argGisRetailersProxy);
+
 app.use('/welcome', WelcomeController);
 
 // Serve the application at the given port

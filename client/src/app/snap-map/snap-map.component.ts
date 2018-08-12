@@ -66,7 +66,7 @@ export class SnapMapComponent {
   updatePins(map: L.Map) {
     const bounds = map.getBounds();
     esri.query({
-      url: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/ArcGIS/rest/services/retailer/MapServer/0'
+      url: 'http://localhost:3000/ArcGIS/rest/services/retailer/MapServer/0'
     }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
       this.markers.clearLayers();
       for (const feature of geoJson.features) {
