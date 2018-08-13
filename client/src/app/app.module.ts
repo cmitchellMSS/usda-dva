@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
@@ -17,6 +18,7 @@ import { LocationComponent } from './location/location.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     LeafletModule.forRoot()
   ],
   providers: [],
