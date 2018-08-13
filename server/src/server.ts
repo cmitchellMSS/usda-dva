@@ -24,10 +24,3 @@ app.listen(port, () => {
   // Success callback
   console.log(`Listening at http://localhost:${port}/`);
 });
-
-
-
-
-// import FarmersMarketsProvider from './dataProviders/farmers-markets.provider';
-
-// var fmp = new FarmersMarketsProvider();
