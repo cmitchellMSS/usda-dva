@@ -6,15 +6,17 @@ import { LocationsService, LocationKind } from '../locations.service';
 
 const icons: { [key in LocationKind]: L.Icon } = {
   market: L.icon({
-    iconSize: [25, 41],
-    iconAnchor: [12, 10],
+    iconSize: [23, 40],
+    iconAnchor: [11, 40],
+    popupAnchor: [0, -25],
     iconUrl: 'assets/market-pin.png',
     shadowUrl: 'assets/marker-shadow.png',
   }),
   retail: L.icon({
-    iconSize: [25, 41],
-    iconAnchor: [12, 10],
-    iconUrl: 'assets/marker-icon.png',
+    iconSize: [23, 40],
+    iconAnchor: [11, 40],
+    popupAnchor: [0, -25],
+    iconUrl: 'assets/retailer-pin.png',
     shadowUrl: 'assets/marker-shadow.png',
   })
 };
