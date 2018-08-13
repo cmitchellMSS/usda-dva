@@ -8,20 +8,23 @@ import { AppComponent } from './app.component';
 import { SnapMapComponent } from './snap-map/snap-map.component';
 import { LocationsPanelComponent } from './locations-panel/locations-panel.component';
 import { LocationComponent } from './location/location.component';
+import { FiltersBarComponent } from './filters-bar/filters-bar.component';
+import { MapService } from './map.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SnapMapComponent,
     LocationsPanelComponent,
-    LocationComponent
+    LocationComponent,
+    FiltersBarComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     LeafletModule.forRoot()
   ],
-  providers: [],
+  providers: [MapService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

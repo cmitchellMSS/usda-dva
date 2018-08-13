@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import * as L from 'leaflet';
 import { throttle } from 'lodash';
-import { LocationsService, LocationKind } from '../locations.service';
+import { LocationsService, LocationKind, MapLocation } from '../locations.service';
+import { MapService, LocationFilter } from '../map.service';
 
 const icons: { [key in LocationKind]: L.Icon } = {
   market: L.icon({
@@ -36,41 +37,25 @@ export class SnapMapComponent implements OnInit {
     center: L.latLng(38.957189, -77.352262)
   };
 
+  map: L.Map;
   marketsMarkers: L.LayerGroup;
   retailerMarkers: L.LayerGroup;
 
-  constructor(private locationsService: LocationsService) { }
+  constructor(
+    private locationsService: LocationsService,
+    private mapService: MapService
+  ) { }
 
   ngOnInit() {
-    this.locationsService.locations.subscribe(locations => {
-      this.marketsMarkers.clearLayers();
-      this.retailerMarkers.clearLayers();
-
-      for (const location of locations) {
-        const marker = L.marker(location, {
-          icon: icons[location.kind]
-        })
-          .bindPopup(`
-            <strong>${location.name}</strong><br />
-            <br />
-            <strong>Address</strong><br />
-            ${location.address1}<br />
-            ${location.address2 ? (location.address2 + '<br />') : ''}
-            ${location.city}, ${location.state} ${location.zip}
-          `);
-        if (location.kind === 'market') {
-          marker.addTo(this.marketsMarkers);
-        } else if (location.kind === 'retail') {
-          marker.addTo(this.retailerMarkers);
-        }
-      }
-    });
+    
   }
 
   onMapReady(map: L.Map) {
+    this.map = map;
+
     // Layer to keep track of markers for easy removal
-    this.retailerMarkers = L.layerGroup().addTo(map);
-    this.marketsMarkers = L.layerGroup().addTo(map);
+    this.retailerMarkers = L.layerGroup();//.addTo(map);
+    this.marketsMarkers = L.layerGroup();//.addTo(map);
 
     // Attempt to user the browsers geolocation to set the map location
     if (navigator && navigator.geolocation && navigator.geolocation.getCurrentPosition) {
@@ -83,14 +68,56 @@ export class SnapMapComponent implements OnInit {
     }
 
     // Update pins when the map view changes
-    const boundUpdatePins = this.updatePins.bind(this, map);
+    const boundUpdatePins = this.onMapMove.bind(this, map);
     const throttledUpdatePins = throttle(boundUpdatePins, 1000, { leading: false });
     map.on('move', throttledUpdatePins);
+
+    this.mapService.locationFilter.subscribe(this.updateMapFilters.bind(this));
+    this.locationsService.locations.subscribe(this.updateMapMarkers.bind(this));
   }
 
-  async updatePins(map: L.Map) {
+  private async onMapMove(map: L.Map) {
     const bounds = map.getBounds();
 
     this.locationsService.updateLocation(bounds);
+  }
+
+  private updateMapFilters(filters: LocationFilter) {
+    if (filters.market) {
+      this.marketsMarkers.addTo(this.map);
+    } else {
+      this.marketsMarkers.removeFrom(this.map);
+    }
+
+    if (filters.retail) {
+      this.retailerMarkers.addTo(this.map);
+    } else {
+      this.retailerMarkers.removeFrom(this.map);
+    }
+    //this.marketsMarkers.
+  }
+
+  private updateMapMarkers(locations: MapLocation[]) {
+    this.marketsMarkers.clearLayers();
+    this.retailerMarkers.clearLayers();
+
+    for (const location of locations) {
+      const marker = L.marker(location, {
+        icon: icons[location.kind]
+      })
+        .bindPopup(`
+          <strong>${location.name}</strong><br />
+          <br />
+          <strong>Address</strong><br />
+          ${location.address1}<br />
+          ${location.address2 ? (location.address2 + '<br />') : ''}
+          ${location.city}, ${location.state} ${location.zip}
+        `);
+      if (location.kind === 'market') {
+        marker.addTo(this.marketsMarkers);
+      } else if (location.kind === 'retail') {
+        marker.addTo(this.retailerMarkers);
+      }
+    }
   }
 }

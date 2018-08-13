@@ -1,6 +1,6 @@
-import { Injectable } from "../../node_modules/@angular/core";
-import { HttpClient } from "../../node_modules/@angular/common/http";
-import { ReplaySubject } from "../../node_modules/rxjs";
+import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+import { ReplaySubject } from "rxjs";
 import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
 
 import * as esri from 'esri-leaflet';
@@ -21,7 +21,7 @@ type RetailerProperties = {
 
 export type LocationKind = 'market' | 'retail';
 
-export type Location = {
+export type MapLocation = {
   kind: LocationKind;
   name: string;
   lat: number;
@@ -33,7 +33,7 @@ export type Location = {
   zip: string;
 };
 
-function mapMarket(market: FarmersMarket): Location {
+function mapMarket(market: FarmersMarket): MapLocation {
   return {
     kind: 'market',
     name: market.MarketName,
@@ -47,7 +47,7 @@ function mapMarket(market: FarmersMarket): Location {
   };
 }
 
-function mapRetailer(retailer: GeoJSON.Feature<GeoJSON.Point, RetailerProperties>): Location {
+function mapRetailer(retailer: GeoJSON.Feature<GeoJSON.Point, RetailerProperties>): MapLocation {
   return {
     kind: 'retail',
     name: retailer.properties.STORE_NAME,
@@ -63,7 +63,7 @@ function mapRetailer(retailer: GeoJSON.Feature<GeoJSON.Point, RetailerProperties
 
 @Injectable()
 export class LocationsService {
-  readonly locations = new ReplaySubject<Location[]>(1);
+  readonly locations = new ReplaySubject<MapLocation[]>(1);
 
   constructor(private http: HttpClient) { }
 
