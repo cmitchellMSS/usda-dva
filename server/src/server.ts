@@ -1,4 +1,6 @@
 import express, { Application, Request } from 'express';
+import cors from 'cors';
+
 import proxy from 'http-proxy-middleware';
 
 import { FarmersMarketController, WelcomeController } from './controllers';
@@ -7,6 +9,10 @@ import { FarmersMarketController, WelcomeController } from './controllers';
 const app = express();
 // The port the express app will listen on
 const port = process.env.PORT || 3000;
+
+app.use(cors({
+  origin: 'http://localhost:4200'
+}))
 
 // Proxy for data coming from USDA ArcGIS retailers
 const argGisRetailersProxy = proxy('/ArcGIS', {

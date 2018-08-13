@@ -6,7 +6,6 @@ const router: Router = Router();
 const farmersMarketProvider = new FarmersMarketsProvider();
 
 router.all('/', (req: Request, res: Response) => {
-  console.log('getting fm');
   const { north, east, south, west } = req.query;
 
   res.send(farmersMarketProvider.getMarkets({ north, east, south, west }));

@@ -1,41 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
-import { FarmersMarket } from '../../../../server/src/dataProviders/farmers-market';
 
 import * as L from 'leaflet';
-import * as esri from 'esri-leaflet';
 import { throttle } from 'lodash';
+import { LocationsService, LocationKind } from '../locations.service';
 
-type RetailerProperties = {
-  ADDRESS: string;
-  ADDRESS2: string;
-  CITY: string;
-  County: string;
-  OBJECTID: number;
-  STATE: string;
-  STORE_NAME: string;
-  ZIP5: number;
-  latitude: number;
-  longitude: number;
-  zip4: string;
-};
-
-const markerOptions: L.MarkerOptions = {
-  icon: L.icon({
+const icons: { [key in LocationKind]: L.Icon } = {
+  market: L.icon({
+    iconSize: [25, 41],
+    iconAnchor: [12, 10],
+    iconUrl: 'assets/market-pin.png',
+    shadowUrl: 'assets/marker-shadow.png',
+  }),
+  retail: L.icon({
     iconSize: [25, 41],
     iconAnchor: [12, 10],
     iconUrl: 'assets/marker-icon.png',
-    shadowUrl: 'assets/marker-shadow.png'
+    shadowUrl: 'assets/marker-shadow.png',
   })
 };
 
 @Component({
   selector: 'app-snap-map',
   templateUrl: './snap-map.component.html',
-  styleUrls: ['./snap-map.component.scss']
+  styleUrls: ['./snap-map.component.scss'],
+  providers: [LocationsService]
 })
-export class SnapMapComponent {
+export class SnapMapComponent implements OnInit {
   options: L.MapOptions = {
     layers: [
       L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
@@ -44,10 +34,36 @@ export class SnapMapComponent {
     center: L.latLng(38.957189, -77.352262)
   };
 
-  retailerMarkers: L.LayerGroup;
   marketsMarkers: L.LayerGroup;
+  retailerMarkers: L.LayerGroup;
 
-  constructor(private http: HttpClient) { }
+  constructor(private locationsService: LocationsService) { }
+
+  ngOnInit() {
+    this.locationsService.locations.subscribe(locations => {
+      this.marketsMarkers.clearLayers();
+      this.retailerMarkers.clearLayers();
+
+      for (const location of locations) {
+        const marker = L.marker(location, {
+          icon: icons[location.kind]
+        })
+          .bindPopup(`
+            <strong>${location.name}</strong><br />
+            <br />
+            <strong>Address</strong><br />
+            ${location.address1}<br />
+            ${location.address2 ? (location.address2 + '<br />') : ''}
+            ${location.city}, ${location.state} ${location.zip}
+          `);
+        if (location.kind === 'market') {
+          marker.addTo(this.marketsMarkers);
+        } else if (location.kind === 'retail') {
+          marker.addTo(this.retailerMarkers);
+        }
+      }
+    });
+  }
 
   onMapReady(map: L.Map) {
     // Layer to keep track of markers for easy removal
@@ -73,40 +89,6 @@ export class SnapMapComponent {
   async updatePins(map: L.Map) {
     const bounds = map.getBounds();
 
-    esri.query({
-      url: 'http://localhost:3000/ArcGIS/rest/services/retailer/MapServer/0'
-    }).within(bounds).run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
-      this.retailerMarkers.clearLayers();
-      for (const feature of geoJson.features) {
-        const coordinates: [number, number] = [feature.properties.latitude, feature.properties.longitude];
-        const marker = L.marker(coordinates, markerOptions)
-          .addTo(this.retailerMarkers)
-          .bindPopup(`
-            <strong>${feature.properties.STORE_NAME}</strong><br />
-            <br />
-            <strong>Address</strong><br />
-            ${feature.properties.ADDRESS}<br />
-            ${feature.properties.ADDRESS2 ? (feature.properties.ADDRESS2 + '<br />') : ''}
-            ${feature.properties.CITY}, ${feature.properties.STATE} ${feature.properties.ZIP5}
-          `);
-      }
-      console.log(geoJson);
-    });
-
-    const farmersMarkets = await this.http.get<FarmersMarket[]>(`http://localhost:3000/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
-    console.log(farmersMarkets);
-    this.marketsMarkers.clearLayers();
-    for (const market of farmersMarkets) {
-      const coordinates: [number, number] = [market.y, market.x];
-      const marker = L.marker(coordinates, markerOptions)
-          .addTo(this.marketsMarkers)
-          .bindPopup(`
-            <strong>${market.MarketName}</strong><br />
-            <br />
-            <strong>Address</strong><br />
-            ${market.street}<br />
-            ${market.city}, ${market.State} ${market.zip}
-          `);
-    }
+    this.locationsService.updateLocation(bounds);
   }
 }
