@@ -10,6 +10,7 @@ import { LocationsPanelComponent } from './locations-panel/locations-panel.compo
 import { LocationComponent } from './location/location.component';
 import { FiltersBarComponent } from './filters-bar/filters-bar.component';
 import { MapService } from './map.service';
+import { LocationsService } from './locations.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,10 @@ import { MapService } from './map.service';
     HttpClientModule,
     LeafletModule.forRoot()
   ],
-  providers: [MapService],
+  providers: [
+    LocationsService,
+    MapService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

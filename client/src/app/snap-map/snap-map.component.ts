@@ -25,8 +25,7 @@ const icons: { [key in LocationKind]: L.Icon } = {
 @Component({
   selector: 'app-snap-map',
   templateUrl: './snap-map.component.html',
-  styleUrls: ['./snap-map.component.scss'],
-  providers: [LocationsService]
+  styleUrls: ['./snap-map.component.scss']
 })
 export class SnapMapComponent implements OnInit {
   options: L.MapOptions = {
@@ -68,7 +67,7 @@ export class SnapMapComponent implements OnInit {
     }
 
     // Update pins when the map view changes
-    const boundUpdatePins = this.onMapMove.bind(this, map);
+    const boundUpdatePins = this.onMapMove.bind(this);
     const throttledUpdatePins = throttle(boundUpdatePins, 1000, { leading: false });
     map.on('move', throttledUpdatePins);
 
@@ -76,8 +75,8 @@ export class SnapMapComponent implements OnInit {
     this.locationsService.locations.subscribe(this.updateMapMarkers.bind(this));
   }
 
-  private async onMapMove(map: L.Map) {
-    const bounds = map.getBounds();
+  private async onMapMove() {
+    const bounds = this.map.getBounds();
 
     this.locationsService.updateLocation(bounds);
   }
@@ -94,7 +93,6 @@ export class SnapMapComponent implements OnInit {
     } else {
       this.retailerMarkers.removeFrom(this.map);
     }
-    //this.marketsMarkers.
   }
 
   private updateMapMarkers(locations: MapLocation[]) {

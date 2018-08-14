@@ -31,6 +31,7 @@ export type MapLocation = {
   city: string;
   state: string;
   zip: string;
+  website?: string;
 };
 
 function mapMarket(market: FarmersMarket): MapLocation {
@@ -44,6 +45,7 @@ function mapMarket(market: FarmersMarket): MapLocation {
     city: market.city,
     state: market.State,
     zip: market.zip,
+    website: market.Website,
   };
 }
 

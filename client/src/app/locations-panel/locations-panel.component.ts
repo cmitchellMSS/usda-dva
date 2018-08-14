@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LocationsService, MapLocation } from '../locations.service';
 
 @Component({
   selector: 'app-locations-panel',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocationsPanelComponent implements OnInit {
 
-  constructor() { }
+  locations: MapLocation[];
+
+  constructor(private locationService: LocationsService) { }
 
   ngOnInit() {
+    this.locationService.locations.subscribe(locations => {
+      console.log(locations);
+      this.locations = locations;
+    });
   }
 
 }
