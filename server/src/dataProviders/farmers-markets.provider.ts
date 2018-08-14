@@ -1,10 +1,11 @@
 import * as fs from 'fs';
 import parse from 'csv-parse/lib/sync';
 
+import serverConfig from '../config';
 import { FarmersMarket } from './farmers-market';
 
 function readFile() {
-  return fs.readFileSync('../data/national-farmers-market-directory_snap.csv', 'utf8');
+  return fs.readFileSync(serverConfig.farmersMarketFilePath, 'utf8');
 }
 
 function parseData(data: string): FarmersMarket[] {
