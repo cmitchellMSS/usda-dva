@@ -10,13 +10,9 @@ export type Config = {
 
 let envConfig = {};
 
-console.log('NODE_ENV: ' + process.env.NODE_ENV);
-
 if (process.env.NODE_ENV === 'local') {
   envConfig = require('./config.local');
 }
-
-console.log(envConfig);
 
 const serverConfig: Config = {
   buildEnv: (process.env.NODE_ENV as BuildEnv) || 'dev',
