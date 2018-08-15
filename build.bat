@@ -3,7 +3,12 @@ RMDIR server\build /S /Q
 RMDIR build /S /Q
 
 PUSHD client
+CALL npm i
 CALL ng build
+POPD
+
+PUSHD server
+CALL npm i
 POPD
 
 XCOPY server build\ /S /Q /Y /F
