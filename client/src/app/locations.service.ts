@@ -1,9 +1,10 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { ReplaySubject } from "rxjs";
-import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
-
 import * as esri from 'esri-leaflet';
+
+import { environment } from "../environments/environment.prod";
+import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
 
 type RetailerProperties = {
   ADDRESS: string;
@@ -80,12 +81,12 @@ export class LocationsService {
   }
 
   private async getMarkestData(bounds: L.LatLngBounds) {
-    return this.http.get<FarmersMarket[]>(`http://localhost:3000/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
+    return this.http.get<FarmersMarket[]>(`${environment.production ? '' : 'http://localhost:3000'}/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
   }
 
   private getRetailersData(bounds: L.LatLngBounds) {
     return new Promise<GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>>(resolve => {
-      esri.query({ url: 'http://localhost:3000/ArcGIS/rest/services/retailer/MapServer/0' })
+      esri.query({ url: `${environment.production ? '' : 'http://localhost:3000'}/ArcGIS/rest/services/retailer/MapServer/0` })
         .within(bounds)
         .run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
           resolve(geoJson);

@@ -6,6 +6,7 @@
 /server/build
 /tmp
 /out-tsc
+/*.zip
 
 # dependencies
 node_modules
@@ -40,3 +41,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+.ebextensions/*
+.ebignore

@@ -33,7 +33,7 @@ app.use('/farmersmarkets', FarmersMarketController);
 app.use('/welcome', WelcomeController);
 
 if (serverConfig.buildEnv !== 'dev') {
-  app.use(express.static(path.join(__dirname, 'site')));
+  app.use(express.static(serverConfig.staticFilesPath));
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'site/index.html'));
   });
