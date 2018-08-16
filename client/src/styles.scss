@@ -1,3 +1,15 @@
+@import "~ngx-smart-modal/ngx-smart-modal";
+
+.nsm-overlay-open {
+  z-index: 10000 !important;
+}
+
+.nsm-dialog-btn-close {
+  margin: 0 !important;
+  padding: 1px 6px !important;
+  background-color: transparent !important;
+}
+
 /**
  * Overrides for the USWDS to make the page work full width.
  */

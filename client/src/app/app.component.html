@@ -18,12 +18,12 @@
       </button>
       <ul class="usa-nav-primary usa-accordion">
         <li>
-          <a class="usa-nav-link" href="javascript:void(0)">
+          <a class="usa-nav-link" href="javascript:void(0)" (click)="ngxSmartModalService.getModal('tellSonnyModal').open()">
             <span><img src="/assets/chat-icon.svg" width="16px" /> Tell Sonny</span>
           </a>
         </li>
         <li>
-          <a class="usa-nav-link" href="javascript:void(0)">
+          <a class="usa-nav-link" href="javascript:void(0)" (click)="ngxSmartModalService.getModal('helpModal').open()">
             <span><img src="/assets/help-icon.svg" width="16px" /> Help</span>
           </a>
         </li>
@@ -40,3 +40,6 @@
     <app-locations-panel></app-locations-panel>
   </div>
 </main>
+
+<app-help-modal></app-help-modal>
+<app-tell-sonny-modal></app-tell-sonny-modal>

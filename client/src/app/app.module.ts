@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 
 import { AppComponent } from './app.component';
 import { SnapMapComponent } from './snap-map/snap-map.component';
@@ -12,6 +13,8 @@ import { FiltersBarComponent } from './filters-bar/filters-bar.component';
 import { MapService } from './map.service';
 import { LocationsService } from './locations.service';
 import { RatingControlComponent } from './rating-control/rating-control.component';
+import { HelpModalComponent } from './help-modal/help-modal.component';
+import { TellSonnyModalComponent } from './tell-sonny-modal/tell-sonny-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +23,15 @@ import { RatingControlComponent } from './rating-control/rating-control.componen
     LocationsPanelComponent,
     LocationComponent,
     FiltersBarComponent,
-    RatingControlComponent
+    RatingControlComponent,
+    HelpModalComponent,
+    TellSonnyModalComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    LeafletModule.forRoot()
+    LeafletModule.forRoot(),
+    NgxSmartModalModule.forRoot()
   ],
   providers: [
     LocationsService,

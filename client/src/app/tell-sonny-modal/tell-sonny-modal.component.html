@@ -1,0 +1,50 @@
+<ngx-smart-modal #tellSonnyModal [identifier]="'tellSonnyModal'">
+  <h1>Tell Sonny</h1>
+  <p>
+    Secretary Sonny Perdue wants to hear from you about the customer service you receive from USDA. Your comments and suggestions
+    will help us find better ways to meet your customer service needs.
+  </p>
+
+  <label for="experience-text">
+    What do you want to tell Sonny about your customer service experience? (limit 1000 characters)
+  </label>
+  <input id="experience-text" name="experience-text" type="text">
+
+  <label for="experience-text">
+    Do you identify yourself as a: Select one.
+  </label>
+  <select id="experience-text" name="experience-text">
+    <option value>- Select -</option>
+    <option value="farmerRancher">Farmer or Rancher</option>
+    <option value="foodProcessorProducer">Food processor or producer</option>
+    <option value="forester">Forester</option>
+    <option value="snapRecipient">Recipient of the Supplemental Nutrition Assistance Program (SNAP), National School Lunch Program (NSLP), Women, Infants,
+      and Children (WIC), etc.</option>
+    <option value="researchEducator">Researcher or educator</option>
+    <option value="govEmployee">Employee of a state or local government</option>
+    <option value="public">General member of the public</option>
+    <option value="usdaEmployee">USDA employee</option>
+    <option value="other">Other</option>
+  </select>
+
+  <p>
+    Please rate your level of agreement, on a rating scale of 1 to 5: 1=strongly disagree, 5=strongly agree, and 0=not applicable.
+  </p>
+
+  <label>It is easy to find out about USDA programs and services.</label>
+  <app-rating-control></app-rating-control>
+
+  <label>It is easy to identify and reach the people at USDA who I need to speak with.</label>
+  <app-rating-control></app-rating-control>
+
+  <label>I was able to get my needs met in a reasonable amount of time.</label>
+  <app-rating-control></app-rating-control>
+
+  <label>USDA employees are helpful, knowledgeable, and respectful of my time.</label>
+  <app-rating-control></app-rating-control>
+
+  <label>My overall customer experience with USDA is positive.</label>
+  <app-rating-control></app-rating-control>
+
+  <button (click)="tellSonnyModal.close()">Send Comments</button>
+</ngx-smart-modal>
