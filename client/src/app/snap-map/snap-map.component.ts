@@ -13,6 +13,13 @@ const icons: { [key in LocationKind]: L.Icon } = {
     iconUrl: 'assets/market-pin.png',
     shadowUrl: 'assets/marker-shadow.png',
   }),
+  office: L.icon({
+    iconSize: [23, 40],
+    iconAnchor: [11, 40],
+    popupAnchor: [0, -25],
+    iconUrl: 'assets/office-pin.png',
+    shadowUrl: 'assets/office-shadow.png',
+  }),
   retail: L.icon({
     iconSize: [23, 40],
     iconAnchor: [11, 40],
@@ -37,7 +44,8 @@ export class SnapMapComponent implements OnInit {
   };
 
   map: L.Map;
-  marketsMarkers: L.LayerGroup;
+  marketMarkers: L.LayerGroup;
+  officeMarkers: L.LayerGroup;
   retailerMarkers: L.LayerGroup;
 
   constructor(
@@ -53,8 +61,9 @@ export class SnapMapComponent implements OnInit {
     this.map = map;
 
     // Layer to keep track of markers for easy removal
-    this.retailerMarkers = L.layerGroup();//.addTo(map);
-    this.marketsMarkers = L.layerGroup();//.addTo(map);
+    this.retailerMarkers = L.layerGroup();
+    this.officeMarkers = L.layerGroup();
+    this.marketMarkers = L.layerGroup();
 
     // Attempt to user the browsers geolocation to set the map location
     if (navigator && navigator.geolocation && navigator.geolocation.getCurrentPosition) {
@@ -83,9 +92,15 @@ export class SnapMapComponent implements OnInit {
 
   private updateMapFilters(filters: LocationFilter) {
     if (filters.market) {
-      this.marketsMarkers.addTo(this.map);
+      this.marketMarkers.addTo(this.map);
     } else {
-      this.marketsMarkers.removeFrom(this.map);
+      this.marketMarkers.removeFrom(this.map);
+    }
+
+    if (filters.office) {
+      this.officeMarkers.addTo(this.map);
+    } else {
+      this.officeMarkers.removeFrom(this.map);
     }
 
     if (filters.retail) {
@@ -96,7 +111,8 @@ export class SnapMapComponent implements OnInit {
   }
 
   private updateMapMarkers(locations: MapLocation[]) {
-    this.marketsMarkers.clearLayers();
+    this.marketMarkers.clearLayers();
+    this.officeMarkers.clearLayers();
     this.retailerMarkers.clearLayers();
 
     for (const location of locations) {
@@ -112,7 +128,9 @@ export class SnapMapComponent implements OnInit {
           ${location.city}, ${location.state} ${location.zip}
         `);
       if (location.kind === 'market') {
-        marker.addTo(this.marketsMarkers);
+        marker.addTo(this.marketMarkers);
+      } else if (location.kind === 'office') {
+        marker.addTo(this.officeMarkers);
       } else if (location.kind === 'retail') {
         marker.addTo(this.retailerMarkers);
       }

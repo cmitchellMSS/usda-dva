@@ -1,2 +1,2 @@
 export * from './farmers-markets.controller';
-export * from './welcome.controller';
+export * from './snap-offices.controller';

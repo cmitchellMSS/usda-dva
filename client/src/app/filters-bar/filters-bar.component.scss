@@ -33,6 +33,12 @@
     }
   }
   
+  &-office.active {
+    span {
+      border-color: #02BFE7;
+    }
+  }
+  
   &-retailer.active {
     span {
       border-color: #A3A1FB;

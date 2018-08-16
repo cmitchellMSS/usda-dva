@@ -5,6 +5,7 @@ import * as esri from 'esri-leaflet';
 
 import { environment } from "../environments/environment";
 import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
+import { SnapOffice } from "../../../server/src/dataProviders/snap-office";
 
 type RetailerProperties = {
   ADDRESS: string;
@@ -20,7 +21,7 @@ type RetailerProperties = {
   zip4: string;
 };
 
-export type LocationKind = 'market' | 'retail';
+export type LocationKind = 'market' | 'office' | 'retail';
 
 export type MapLocation = {
   kind: LocationKind;
@@ -50,6 +51,21 @@ function mapMarket(market: FarmersMarket): MapLocation {
   };
 }
 
+function mapOffice(office: SnapOffice): MapLocation {
+  return {
+    kind: 'office',
+    name: office.Name,
+    lat: office.Lat,
+    lng: office.Lng,
+    address1: office.Address,
+    address2: null,
+    city: office.City,
+    state: office.State,
+    zip: office.Zip,
+    website: null,
+  };
+}
+
 function mapRetailer(retailer: GeoJSON.Feature<GeoJSON.Point, RetailerProperties>): MapLocation {
   return {
     kind: 'retail',
@@ -72,18 +88,22 @@ export class LocationsService {
 
   async updateLocation(bounds: L.LatLngBounds) {
     const markets = await this.getMarkestData(bounds);
+    const offices = await this.getOfficeData(bounds);
     const retailers = await this.getRetailersData(bounds);
 
     const mappedMarkets = markets.filter((val, idx) => idx < 50).map(mapMarket);
+    const mappedOffices = offices.filter((val, idx) => idx < 50).map(mapOffice);
     const mappedRetailers = retailers.features.filter((val, idx) => idx < 50).map(mapRetailer);
 
-    this.locations.next([...mappedMarkets, ...mappedRetailers]);
+    this.locations.next([...mappedMarkets, ...mappedOffices, ...mappedRetailers]);
   }
 
   private async getMarkestData(bounds: L.LatLngBounds) {
-    console.log(JSON.stringify(environment.production));
-    console.log(`${environment.production ? '' : 'http://localhost:3000'}/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`);
     return this.http.get<FarmersMarket[]>(`${environment.production ? '' : 'http://localhost:3000'}/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
+  }
+
+  private async getOfficeData(bounds: L.LatLngBounds) {
+    return this.http.get<SnapOffice[]>(`${environment.production ? '' : 'http://localhost:3000'}/snapoffices?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
   }
 
   private getRetailersData(bounds: L.LatLngBounds) {

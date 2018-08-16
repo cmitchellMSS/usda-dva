@@ -4,7 +4,7 @@ import cors from 'cors';
 import proxy from 'http-proxy-middleware';
 
 import serverConfig from './config';
-import { FarmersMarketController, WelcomeController } from './controllers';
+import { FarmersMarketController, SnapOfficesController } from './controllers';
 
 
 // Create a new express application instance
@@ -30,7 +30,7 @@ const argGisRetailersProxy = proxy('/ArcGIS', {
 app.use(argGisRetailersProxy);
 
 app.use('/farmersmarkets', FarmersMarketController);
-app.use('/welcome', WelcomeController);
+app.use('/snapoffices', SnapOfficesController);
 
 if (serverConfig.buildEnv !== 'dev') {
   app.use(express.static(serverConfig.staticFilesPath));

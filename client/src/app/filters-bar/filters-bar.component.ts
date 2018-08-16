@@ -11,6 +11,7 @@ export class FiltersBarComponent implements OnInit {
 
   locationsFilterState: LocationFilter = {
     market: true,
+    office: true,
     retail: true,
   };
 
