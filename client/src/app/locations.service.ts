@@ -3,7 +3,7 @@ import { HttpClient } from "@angular/common/http";
 import { ReplaySubject } from "rxjs";
 import * as esri from 'esri-leaflet';
 
-import { environment } from "../environments/environment.prod";
+import { environment } from "../environments/environment";
 import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
 
 type RetailerProperties = {
@@ -74,13 +74,15 @@ export class LocationsService {
     const markets = await this.getMarkestData(bounds);
     const retailers = await this.getRetailersData(bounds);
 
-    const mappedMarkets = markets.map(mapMarket);
-    const mappedRetailers = retailers.features.map(mapRetailer);
+    const mappedMarkets = markets.filter((val, idx) => idx < 50).map(mapMarket);
+    const mappedRetailers = retailers.features.filter((val, idx) => idx < 50).map(mapRetailer);
 
     this.locations.next([...mappedMarkets, ...mappedRetailers]);
   }
 
   private async getMarkestData(bounds: L.LatLngBounds) {
+    console.log(JSON.stringify(environment.production));
+    console.log(`${environment.production ? '' : 'http://localhost:3000'}/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`);
     return this.http.get<FarmersMarket[]>(`${environment.production ? '' : 'http://localhost:3000'}/farmersmarkets?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
   }
 
