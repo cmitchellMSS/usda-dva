@@ -2,7 +2,7 @@
  * Overrides for the USWDS to make the page work full width.
  */
 
-.usa-banner-inner {
+.usa-nav-container {
   max-width: 100% !important;
 }
 
@@ -12,18 +12,6 @@
 }
 
 @media screen and (min-width: 951px) {
-  .usa-nav-container {
-    max-width: 100% !important;
-  }
-
-  .usa-navbar {
-    height: 5rem !important;
-  }
-  
-  .usa-header-basic .usa-navbar {
-    width: 50% !important;
-  }
-
   .usa-logo-img {
     height: 28px;
   }

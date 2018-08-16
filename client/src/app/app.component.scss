@@ -10,11 +10,22 @@
 
 .usa-header {
   flex: 0 0 auto;
+  z-index: 9000;
 }
 
 #main-content {
   flex: 1;
   display: flex;
+  flex-direction: column;
+}
+
+app-filter-bar {
+  flex: 0 0 auto;
+}
+
+.main-body {
+  display: flex;
+  flex: 1;
 }
 
 app-snap-map {
