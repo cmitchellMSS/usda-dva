@@ -1,0 +1,20 @@
+span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('/assets/star-icon-red.svg');
+
+  &.selected ~ span {
+    background: url('/assets/star-icon-grey.svg');
+  }
+}
+
+:host:hover {
+  > span {
+    background: url('/assets/star-icon-red.svg') !important;
+    
+    &:hover ~ span {
+      background: url('/assets/star-icon-grey.svg') !important;
+    }
+  }
+}

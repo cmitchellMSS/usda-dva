@@ -16,4 +16,6 @@
   <a [attr.href]="location.website">Visit Website</a>
 </div>
 
+<app-rating-control [currentRating]="rating" (ratingChange)="rating = $event"></app-rating-control>
+
 <hr />

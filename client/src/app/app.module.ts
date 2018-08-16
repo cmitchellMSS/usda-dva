@@ -11,6 +11,7 @@ import { LocationComponent } from './location/location.component';
 import { FiltersBarComponent } from './filters-bar/filters-bar.component';
 import { MapService } from './map.service';
 import { LocationsService } from './locations.service';
+import { RatingControlComponent } from './rating-control/rating-control.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LocationsService } from './locations.service';
     SnapMapComponent,
     LocationsPanelComponent,
     LocationComponent,
-    FiltersBarComponent
+    FiltersBarComponent,
+    RatingControlComponent
   ],
   imports: [
     BrowserModule,

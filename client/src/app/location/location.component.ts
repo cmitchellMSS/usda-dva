@@ -11,9 +11,12 @@ export class LocationComponent implements OnInit {
   @Input()
   location: MapLocation;
 
+  rating: number;
+
   constructor() { }
 
   ngOnInit() {
+    this.rating = Math.floor(Math.random() * 5) + 1;
   }
 
 }
