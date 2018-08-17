@@ -79,6 +79,7 @@ export class SnapMapComponent implements OnInit {
     const boundUpdatePins = this.onMapMove.bind(this);
     const throttledUpdatePins = throttle(boundUpdatePins, 1000, { leading: false });
     map.on('move', throttledUpdatePins);
+    throttledUpdatePins();
 
     this.mapService.locationFilter.subscribe(this.updateMapFilters.bind(this));
     this.locationsService.locations.subscribe(this.updateMapMarkers.bind(this));

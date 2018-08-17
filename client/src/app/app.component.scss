@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
 
 .usa-banner {
@@ -17,6 +18,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 app-filter-bar {
@@ -26,6 +28,7 @@ app-filter-bar {
 .main-body {
   display: flex;
   flex: 1;
+  overflow: hidden;
 }
 
 app-snap-map {
