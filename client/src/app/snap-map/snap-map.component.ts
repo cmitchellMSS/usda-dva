@@ -37,10 +37,14 @@ const icons: { [key in LocationKind]: L.Icon } = {
 export class SnapMapComponent implements OnInit {
   options: L.MapOptions = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      })
     ],
     zoom: 14,
-    center: L.latLng(38.957189, -77.352262)
+    center: L.latLng(38.957189, -77.352262),
+    attributionControl: false,
   };
 
   map: L.Map;
@@ -59,6 +63,10 @@ export class SnapMapComponent implements OnInit {
 
   onMapReady(map: L.Map) {
     this.map = map;
+
+    L.control.attribution({
+      prefix: '<a target="_blank" href="https://leafletjs.com/">Leaflet</a>'
+    }).addTo(map);
 
     // Layer to keep track of markers for easy removal
     this.retailerMarkers = L.layerGroup();
