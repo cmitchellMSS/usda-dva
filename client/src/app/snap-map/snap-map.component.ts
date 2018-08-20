@@ -18,7 +18,7 @@ const icons: { [key in LocationKind]: L.Icon } = {
     iconAnchor: [11, 40],
     popupAnchor: [0, -25],
     iconUrl: 'assets/office-pin.png',
-    shadowUrl: 'assets/office-shadow.png',
+    shadowUrl: 'assets/marker-shadow.png',
   }),
   retail: L.icon({
     iconSize: [23, 40],
