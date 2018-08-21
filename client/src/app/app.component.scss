@@ -40,10 +40,6 @@ app-locations-panel {
   width: 300px;
 }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 950px) {
-  app-locations-panel {
-=======
 /* Overwrite U.S. Web Design System */
 
 .site-header {
@@ -81,9 +77,8 @@ app-locations-panel {
 }
 
 /* Mobile max-width */
-@media screen and (max-width: 951px){
-  app-locations-panel{
->>>>>>> Stashed changes
+@media screen and (max-width: 950px){
+  app-locations-panel {
     display: none;
   }
 }
