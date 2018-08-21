@@ -15,6 +15,7 @@ import { LocationsService } from './locations.service';
 import { RatingControlComponent } from './rating-control/rating-control.component';
 import { HelpModalComponent } from './help-modal/help-modal.component';
 import { TellSonnyModalComponent } from './tell-sonny-modal/tell-sonny-modal.component';
+import { TellSonnyLocationModalComponent } from './tell-sonny-location-modal/tell-sonny-location-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TellSonnyModalComponent } from './tell-sonny-modal/tell-sonny-modal.com
     FiltersBarComponent,
     RatingControlComponent,
     HelpModalComponent,
-    TellSonnyModalComponent
+    TellSonnyModalComponent,
+    TellSonnyLocationModalComponent
   ],
   imports: [
     BrowserModule,

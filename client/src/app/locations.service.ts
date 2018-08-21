@@ -1,25 +1,11 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { ReplaySubject } from "rxjs";
-import * as esri from 'esri-leaflet';
 
 import { environment } from "../environments/environment";
 import { FarmersMarket } from "../../../server/src/dataProviders/farmers-market";
+import { Retailer } from "../../../server/src/dataProviders/retailer";
 import { SnapOffice } from "../../../server/src/dataProviders/snap-office";
-
-type RetailerProperties = {
-  ADDRESS: string;
-  ADDRESS2: string;
-  CITY: string;
-  County: string;
-  OBJECTID: number;
-  STATE: string;
-  STORE_NAME: string;
-  ZIP5: number;
-  latitude: number;
-  longitude: number;
-  zip4: string;
-};
 
 export type LocationKind = 'market' | 'office' | 'retail';
 
@@ -66,17 +52,17 @@ function mapOffice(office: SnapOffice): MapLocation {
   };
 }
 
-function mapRetailer(retailer: GeoJSON.Feature<GeoJSON.Point, RetailerProperties>): MapLocation {
+function mapRetailer(retailer: Retailer): MapLocation {
   return {
     kind: 'retail',
-    name: retailer.properties.STORE_NAME,
-    lat: retailer.properties.latitude,
-    lng: retailer.properties.longitude,
-    address1: retailer.properties.ADDRESS,
-    address2: retailer.properties.ADDRESS2,
-    city: retailer.properties.CITY,
-    state: retailer.properties.STATE,
-    zip: retailer.properties.ZIP5.toString(),
+    name: retailer.STORE_NAME,
+    lat: retailer.latitude,
+    lng: retailer.longitude,
+    address1: retailer.ADDRESS,
+    address2: retailer.ADDRESS2,
+    city: retailer.CITY,
+    state: retailer.STATE,
+    zip: retailer.ZIP5.toString(),
   };
 }
 
@@ -93,7 +79,7 @@ export class LocationsService {
 
     const mappedMarkets = markets.filter((val, idx) => idx < 50).map(mapMarket);
     const mappedOffices = offices.filter((val, idx) => idx < 50).map(mapOffice);
-    const mappedRetailers = retailers.features.filter((val, idx) => idx < 50).map(mapRetailer);
+    const mappedRetailers = retailers.filter((val, idx) => idx < 50).map(mapRetailer);
 
     this.locations.next([...mappedMarkets, ...mappedOffices, ...mappedRetailers]);
   }
@@ -107,12 +93,6 @@ export class LocationsService {
   }
 
   private getRetailersData(bounds: L.LatLngBounds) {
-    return new Promise<GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>>(resolve => {
-      esri.query({ url: `${environment.production ? '' : 'http://localhost:3000'}/ArcGIS/rest/services/retailer/MapServer/0` })
-        .within(bounds)
-        .run((_, geoJson: GeoJSON.FeatureCollection<GeoJSON.Point, RetailerProperties>) => {
-          resolve(geoJson);
-        });
-    });
+    return this.http.get<Retailer[]>(`${environment.production ? '' : 'http://localhost:3000'}/retailers?north=${bounds.getNorth()}&south=${bounds.getSouth()}&west=${bounds.getWest()}&east=${bounds.getEast()}`).toPromise();
   }
 }

@@ -9,7 +9,7 @@ span {
   }
 }
 
-:host:hover {
+:host:not(.static):hover {
   > span {
     background: url('/assets/star-icon-red.svg') !important;
     

@@ -1,18 +1,15 @@
 import path from 'path';
 import express from 'express';
 import cors from 'cors';
-import proxy from 'http-proxy-middleware';
 
 import serverConfig from './config';
-import { FarmersMarketController, SnapOfficesController } from './controllers';
+import { FarmersMarketController, RetailersController, SnapOfficesController } from './controllers';
 
 
 // Create a new express application instance
 const app = express();
 // The port the express app will listen on
 const port = process.env.PORT || 3000;
-
-console.log(serverConfig.buildEnv);
 
 // CORS only needs to be enabled when developing locally
 if (serverConfig.buildEnv === 'dev') {
@@ -21,15 +18,8 @@ if (serverConfig.buildEnv === 'dev') {
   }));
 }
 
-// Proxy for data coming from USDA ArcGIS retailers
-const argGisRetailersProxy = proxy('/ArcGIS', {
-  target: serverConfig.arcGisOrigin,
-  logLevel: serverConfig.buildEnv === 'production' ? 'error' : 'debug',
-  changeOrigin: true,
-});
-app.use(argGisRetailersProxy);
-
 app.use('/farmersmarkets', FarmersMarketController);
+app.use('/retailers', RetailersController);
 app.use('/snapoffices', SnapOfficesController);
 
 if (serverConfig.buildEnv !== 'dev') {

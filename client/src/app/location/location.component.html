@@ -16,6 +16,9 @@
   <a [attr.href]="location.website">Visit Website</a>
 </div>
 
-<app-rating-control [currentRating]="rating" (ratingChange)="rating = $event"></app-rating-control>
+<app-rating-control class="static" [currentRating]="rating"></app-rating-control>&nbsp;
+<a href="javascript:void(0)" (click)="ngxSmartModalService.getModal('tellSonnyLocationModal').open()">Tell Sonny</a>
+
+<app-tell-sonny-location-modal></app-tell-sonny-location-modal>
 
 <hr />

@@ -5,6 +5,7 @@ export type BuildEnv = 'production' | 'local' | 'dev';
 export type Config = {
   buildEnv: BuildEnv;
   arcGisOrigin: string;
+  retailersFilePath: string;
   farmersMarketFilePath: string;
   snapOfficesFilePath: string;
   staticFilesPath: string;
@@ -21,6 +22,7 @@ if (process.env.NODE_ENV === 'local') {
 const defaultConfig: Config = {
   buildEnv: (process.env.NODE_ENV as BuildEnv) || 'dev',
   arcGisOrigin: 'http://snap-load-balancer-244858692.us-east-1.elb.amazonaws.com/',
+  retailersFilePath: path.join(__dirname, '../../data/snap-retailers.json'),
   farmersMarketFilePath: path.join(__dirname, '../../data/national-farmers-market-directory_snap.csv'),
   snapOfficesFilePath: path.join(__dirname, '../../data/snap-offices.csv'),
   staticFilesPath: path.join(__dirname, 'site'),
