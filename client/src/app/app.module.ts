@@ -16,6 +16,7 @@ import { RatingControlComponent } from './rating-control/rating-control.componen
 import { HelpModalComponent } from './help-modal/help-modal.component';
 import { TellSonnyModalComponent } from './tell-sonny-modal/tell-sonny-modal.component';
 import { TellSonnyLocationModalComponent } from './tell-sonny-location-modal/tell-sonny-location-modal.component';
+import { ThankYouModalComponent } from './thank-you-modal/thank-you-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TellSonnyLocationModalComponent } from './tell-sonny-location-modal/tel
     RatingControlComponent,
     HelpModalComponent,
     TellSonnyModalComponent,
-    TellSonnyLocationModalComponent
+    TellSonnyLocationModalComponent,
+    ThankYouModalComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 @import "~ngx-smart-modal/ngx-smart-modal";
 
-.nsm-overlay-open {
+ngx-smart-modal .overlay {
   z-index: 10000 !important;
 }
 

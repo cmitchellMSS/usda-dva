@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSmartModalService } from 'ngx-smart-modal';
 
 @Component({
   selector: 'app-tell-sonny-modal',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TellSonnyModalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ngxSmartModalService: NgxSmartModalService) { }
 
   ngOnInit() {
   }
 
+  submit() {
+    this.ngxSmartModalService.close('tellSonnyModal');
+    this.ngxSmartModalService.open('thankYouModal');
+  }
+  
 }
