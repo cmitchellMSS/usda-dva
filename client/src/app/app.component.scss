@@ -39,3 +39,9 @@ app-locations-panel {
   flex: 0 0 300px;
   width: 300px;
 }
+
+@media screen and (max-width: 950px) {
+  app-locations-panel {
+    display: none;
+  }
+}
