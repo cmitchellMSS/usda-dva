@@ -40,8 +40,50 @@ app-locations-panel {
   width: 300px;
 }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 950px) {
   app-locations-panel {
+=======
+/* Overwrite U.S. Web Design System */
+
+.site-header {
+  background-color: #112e51;
+}
+.usa-logo a {
+  color: #ffffff;
+}
+
+.usa-header{
+  .usa-nav-container{
+    .usa-navbar {
+      height: 5rem;
+      .usa-logo-text{
+        .usa-logo-img{
+          padding-right:10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 951px){
+  .usa-nav-container{
+    .usa-nav-primary{
+      a{
+        color: #ffffff;
+      }
+    }
+    .usa-nav{
+      padding-top: 2rem;
+      background: transparent;
+    }
+  }
+}
+
+/* Mobile max-width */
+@media screen and (max-width: 951px){
+  app-locations-panel{
+>>>>>>> Stashed changes
     display: none;
   }
 }
