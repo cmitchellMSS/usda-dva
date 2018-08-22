@@ -23,6 +23,15 @@ ngx-smart-modal .overlay {
   vertical-align: sub;
 }
 
+/* Modal styles */
+.nsm-content{
+  padding: 3rem;
+}
+
+.nsm-dialog-btn-close {
+  padding: 6px 6px !important;
+}
+
 @media screen and (min-width: 951px) {
   .usa-logo-img {
     height: 28px;

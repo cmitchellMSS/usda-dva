@@ -1,5 +1,7 @@
 <div class="name">
-  <strong>{{location.name}}</strong>
+  <h4>
+    <strong>{{location.name}}</strong>
+  </h4>
 </div>
 
 <div class="address">
@@ -16,8 +18,10 @@
   <a [attr.href]="location.website">Visit Website</a>
 </div>
 
-<app-rating-control class="static" [currentRating]="rating"></app-rating-control>&nbsp;
-<a href="javascript:void(0)" (click)="ngxSmartModalService.getModal('tellSonnyLocationModal').open()">Tell Sonny</a>
+<div class="rating">
+  <app-rating-control class="static" [currentRating]="rating"></app-rating-control>&nbsp;
+  <a href="javascript:void(0)" (click)="ngxSmartModalService.getModal('tellSonnyLocationModal').open()">Tell Sonny</a>
+</div>
 
 <app-tell-sonny-location-modal></app-tell-sonny-location-modal>
 

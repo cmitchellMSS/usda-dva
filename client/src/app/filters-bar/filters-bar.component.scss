@@ -48,5 +48,7 @@
 
 /* Mobile max-width */
 @media screen and (max-width: 951px){
-
+  :host {
+    padding: 10px 10px;
+  }
 }
