@@ -1,5 +1,9 @@
 # Installing
 
+Install angular-cli
+```
+npm i -g @angular/cli
+```
 
 ### Obtaining sources
 ```
