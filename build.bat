@@ -1,9 +1,10 @@
 RMDIR client\dist /S /Q
+RMDIR server\build /S /Q
 RMDIR build /S /Q
 
 PUSHD client
 CALL npm i
-CALL ng build
+CALL ng build --prod
 POPD
 
 PUSHD server
