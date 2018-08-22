@@ -37,7 +37,7 @@ const icons: { [key in LocationKind]: L.Icon } = {
 export class SnapMapComponent implements OnInit {
   options: L.MapOptions = {
     layers: [
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
         attribution: '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       })
