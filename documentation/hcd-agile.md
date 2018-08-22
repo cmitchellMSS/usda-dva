@@ -1,4 +1,4 @@
-# Human-Centered Design (HCD)
+# Human-Centered Design (HCD) & Agile
 We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum. 
 **Include link to Snap Retail Locator as baseline**
  
