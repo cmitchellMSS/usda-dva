@@ -16,8 +16,10 @@ Developing a prototype in less than four weeks required an experienced agile tea
 Not applicable, as this prototype was developed as a response to the USDA and GSA IT Modernization IT Centers of Excellence Digital Visualization and Analytics BPA. 
 # Play 6 Assign One Leader and Hold That Person Accountable
 Our Product Manager - Senior (Product Owner) is Jason Stoner. 
+
 ![
 ](https://lh3.googleusercontent.com/_pSAzpkz9dfifXkm_G4wBYNAU0QFq8NOynsUtuWQoiM3KS-YW4NsPk6u4Kd__NsIdXxYNDdkSxlD "Jason Stoner - Project Manager - Senior")
+
 He unified the team by facilitating ideation and design activities that allowed us to identify the users and scope of the prototype. He also had the final authority when pivots needed to be made. 
 
 Jason Stoner has 15+ years leading digital teams. His experience spans the entire UX process for web and mobile projects from client interaction and collaboration, data collection, user and task analysis, information architecture, visual design, metrics, and analysis based on targeted user research. 
