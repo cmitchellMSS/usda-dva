@@ -54,4 +54,5 @@ Focuses on how we reach customers and how to make a product (or prototype) succe
 
 # Complete BMC
 ![enter image description here](https://lh3.googleusercontent.com/v8UskSQ8x9MkZNPTJhvsVSjlcnZSlan5AJA1M_zJ_F7ew_2MNYZrTOG3Lt5vwBLfjfNtOFiMZcLd "Complete BMC")
+
 Note: For the purposes of this prototype we did not focus on cost structure and value streams.
