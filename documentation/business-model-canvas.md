@@ -5,7 +5,7 @@ The Business Model Canvas (BMC) enables the team to identify how users' needs ar
 
 To develop the BMC, our team leveraged content found within the RFQ and coupled it with research.
 ## Key Partners
-We brainstormed anyone who would reap the value of the prototype we developed. This helps us identify cross-functional needs. We then looked at all of the teams/individuals that would be required to contribute to the success of the prototype.
+We brainstormed anyone who would reap the value of the prototype we developed, which included data partners. This helps us identify cross-functional needs. We then looked at all of the teams/individuals that would be required to contribute to the success of the prototype.
 
 ## Key Activities
 Activities and attributes that what we want the prototype to actually do and have. 
