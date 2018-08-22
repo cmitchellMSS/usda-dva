@@ -12,7 +12,7 @@ SNAP-MAP focuses on increasing Customer Experience (CX) for millions of citizens
 
 [Prototype](https://www.usdacoe.com)
 
-## Dashboard Mockup
+## Dashboard
 The dashboard will improve and expand data in meaningful ways, and can be used by the Secretary’s staff to create rapid, meaningful discussion for the VOC by pulling data across multiple data sets identified in our research. Citizens’ feedback provided via “Tell Sonny” fuels the dashboard with real-time content and enables continuous feedback. 
 
 [Dashboard Mockup](https://            )
