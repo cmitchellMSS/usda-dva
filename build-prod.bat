@@ -9,8 +9,10 @@ POPD
 
 PUSHD server
 CALL npm i
+CALL npx tsc
 POPD
 
-XCOPY server build\ /S /Q /Y /F
+XCOPY server\build\* build\ /S /Q /Y /F
+XCOPY server\package.json build\ /Q /Y /F
 XCOPY client\dist\site build\site\ /S /Q /Y /F
 XCOPY data build\data\* /Q /Y /F
