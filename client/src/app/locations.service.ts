@@ -55,14 +55,14 @@ function mapOffice(office: SnapOffice): MapLocation {
 function mapRetailer(retailer: Retailer): MapLocation {
   return {
     kind: 'retail',
-    name: retailer.STORE_NAME,
+    name: retailer.store_name,
     lat: retailer.latitude,
     lng: retailer.longitude,
-    address1: retailer.ADDRESS,
-    address2: retailer.ADDRESS2,
-    city: retailer.CITY,
-    state: retailer.STATE,
-    zip: retailer.ZIP5.toString(),
+    address1: retailer.address,
+    address2: retailer.address2,
+    city: retailer.city,
+    state: retailer.state,
+    zip: retailer.zip,
   };
 }
 

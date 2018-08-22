@@ -8,7 +8,7 @@ const retailersProvider = new RetailersProvider();
 router.all('/', (req: Request, res: Response) => {
   const { north, east, south, west } = req.query;
 
-  res.send(retailersProvider.getMarkets({ north, east, south, west }));
+  retailersProvider.getMarkets({ north, east, south, west }, retailers => res.send(retailers));
 });
 
 export const RetailersController: Router = router;
