@@ -16,6 +16,7 @@ The dashboard will improve and expand data in meaningful ways, and can be used b
 # Digital Services Playbook
 
 Our team followed the Digital Service playbook guideline as described in the link below:
+
 [Alignment to Digital Services Playbook](https:// )
 ## 1. Assign a Leader
 We assigned one leader, our Project Manager – Senior (PM), Jason Stoner, who had the authority, responsibility, and was held accountable for the quality of our SNAP-MAP prototype and Dashboard Mockup. He was also responsible for defining the initial prototype concept and backlog priorities.
@@ -24,11 +25,11 @@ We decided that we wanted to build a prototype that met the requirements for the
 ## 3.  Understand Users
 To understand our users, we developed **user personas**, **user stories**, and **user journeys**, which were integrated as part of our overarching **Human-Centered Design** (HCD) process described in more detail below.
 
-[User Stories](https:// )
+[User Stories](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-stories.md)
 ## 4. HCD Process
 We leveraged four core Human-Centered Design (HCD) techniques: 1) **Business Model Generation**, 2) **Lean UX**, 3) **HCD**, 4) **Agile Development**
 
-[Human Centered Design](https://)
+[Human Centered Design](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md)
 ## 5. Styles and Patterns
 To ensure consistency and reduce redundancy while developing the prototype, our team leveraged the [U.S. Web Design Standards](https://designsystem.digital.gov/) and the [USDA Digital Style Guide](https://www.usda.gov/media/digital/digital-style-guide). These resources enabled us to incorporate the best practices and ensure accessibility was built in from the beginning. 
 
