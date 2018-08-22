@@ -1,4 +1,5 @@
-<ngx-smart-modal #helpModal [identifier]="'helpModal'">
+<ngx-smart-modal class="help-modal" #helpModal [identifier]="'helpModal'">
+  <h1>Help</h1>
   <p>
     With over 43 Million citizens using SNAP, we're always looking to bring new features to increase user experience with the
     voice of the customer in mind first. This MVP version streams USDA data from
@@ -6,5 +7,23 @@
     location to ensure our citizens have access to the right information at the right time. Stay tuned for more features
     i.e. transit data, search for your favorite retailers, and localized ratings.
   </p>
+  <img src="/assets/help-map.png" alt="USDA Map Description" class="usda-modal-img">
+  <br />
+  <img src="/assets/help-dashboard.png" alt="USDA Dashboard Description" class="usda-modal-img">
+
+  <h2>Ask the Expert</h2>
+  <p>All frequently asked questions are stored in our online knowledgebase. You will have the ability to search keywords or phrases. By clicking on the advanced tab, you will have the ability to search by topics and subtopics. If you have specific USDA questions that you cannot find in the knowledgebase, you will have an opportunity to submit a question. Please remember that an email address is required.</p>
+  <ul><li><a href="/ask-expert" id="anch_53">Go to Ask the Expert</a></li>
+  </ul>
+
+  <h2>Location</h2>
+  <p>
+    Headquartered in Washington, D.C., USDA's Postal Service mailing address is:
+    <br />
+    <br />U.S. Department of Agriculture
+    <br />1400 Independence Ave., S.W.
+    <br />Washington, DC 20250 
+  </p>
+
   <button (click)="helpModal.close()">Close</button>
 </ngx-smart-modal>
