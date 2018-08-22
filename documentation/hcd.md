@@ -3,7 +3,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 **Include link to Snap Retail Locator as baseline**
  
 ## Approaches & Methodologies
-### Business Model Generation
+### Business Model Canvas
 **What**: Aligns the organizational strategy and vision, business model, and operating models to ensure the digital products being created are aligned with a future oriented operating model to ensure success.
 
 **Why**:   Ensure the products being creates are well positioned with an agile operating model in today’s disruptive environment.
@@ -13,7 +13,8 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 - Team Composition – Bringing passion, purpose and performance together with modern software development best practices
 - Relationships – Create flexibility and efficiency through modular building blocks such external API’s and partnerships to provide enhanced content and data
 
-[Link]
+[Business Model Canvas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/bmc.md)
+
 ### Cognitive Walkthrough          
 **What**: An evaluation method in which people work through a set of representative tasks and ask questions about the task as they go.
 
