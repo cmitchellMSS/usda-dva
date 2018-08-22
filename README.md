@@ -7,9 +7,11 @@
 Our goal is to improve accessibility for SNAP users, which currently find eligible retailers via a FLASH-Based map with Zip Files (inaccessible for most modern browsers and smart phones). To improve the voice of the customer (VOC) and customer understanding, we also identified areas to integrate the data into actionable insights for USDA stakeholders.
 ## SNAP-MAP
 SNAP-MAP focuses on increasing Customer Experience (CX) for millions of citizens who use the SNAP program to feed their families. SNAP-MAP unifies three core data sets around farmers markets, retailers, and SNAP office locations. The result provides citizens with timely, accessible, and trustworthy resources. 
+
 [Prototype](https://            )
 ## Dashboard Mockup
 The dashboard will improve and expand data in meaningful ways, and can be used by the Secretary’s staff to create rapid, meaningful discussion for the VOC by pulling data across multiple data sets identified in our research. Citizens’ feedback provided via “Tell Sonny” fuels the dashboard with real-time content and enables continuous feedback. 
+
 [Dashboard Mockup](https://            )
 # Digital Services Playbook
 
@@ -21,12 +23,15 @@ We assigned one leader, our Project Manager – Senior (PM), Jason Stoner, who h
 We decided that we wanted to build a prototype that met the requirements for the BPA to leverage datasets from Data.gov, Social Media, and USDA web properties, but also included a solution that captured elements from Task Order 1, 2, and 3. Given this scope, we assembled a multidisciplinary team using 6 of the 18 labor categories (LCATs). The LCATs used were 1) **Project Manager - Senior** (who served as our Product Manager), 2) **UX/Graphics Designer**, 3) **Application Developer - Senior**, 4) **Web Designer**, 5) **Data Analyst - Senior**, 6) **Data Analyst - Junior**
 ## 3.  Understand Users
 To understand our users, we developed **user personas**, **user stories**, and **user journeys**, which were integrated as part of our overarching **Human-Centered Design** (HCD) process described in more detail below.
+
 [User Stories](https:// )
 ## 4. HCD Process
 We leveraged four core Human-Centered Design (HCD) techniques: 1) **Business Model Generation**, 2) **Lean UX**, 3) **HCD**, 4) **Agile Development**
+
 [Human Centered Design](https://)
 ## 5. Styles and Patterns
 To ensure consistency and reduce redundancy while developing the prototype, our team leveraged the [U.S. Web Design Standards](https://designsystem.digital.gov/) and the [USDA Digital Style Guide](https://www.usda.gov/media/digital/digital-style-guide). These resources enabled us to incorporate the best practices and ensure accessibility was built in from the beginning. 
+
 [Style Reference Library](https:// )
 ## 6. Application Stack 
 
@@ -35,6 +40,7 @@ We developed SNAP-MAP with X modern, **open source** technologies most appropria
 We conducted usability tests to **evaluate**, **iterate**, and **improve** our prototype by testing it on users. This is a vital usability practice, since it informs direct input on how actual users are interacting with the system.
 ## 8.  Iterate
 Our team needed to move quickly and make informed decisions. To do this, we leveraging **agile scrum** to rapidly identify gaps and areas for improvement without delaying progress.
+
 [Agile Overview](https:// )
 ## 9. Responsive Design
 Our SNAP-MAP prototype works on multiple devices and is a responsive design. We implemented our front-end with the USWDS (U.S. Web Design System) to provide a completely responsive experience. We conducted **usability tests** to observe users on these platforms and used Google’s chrome **mobile display test tool** to emulate the experience of different platforms.
