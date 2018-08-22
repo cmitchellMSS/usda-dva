@@ -18,6 +18,10 @@ ngx-smart-modal .overlay {
   background-color: transparent !important;
 }
 
+.help-modal .nsm-dialog {
+  max-width: 1024px;
+}
+
 /**
  * Overrides for the USWDS to make the page work full width.
  */
