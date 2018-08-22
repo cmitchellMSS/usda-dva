@@ -13,7 +13,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 - Team Composition – Bringing passion, purpose and performance together with modern software development best practices
 - Relationships – Create flexibility and efficiency through modular building blocks such external API’s and partnerships to provide enhanced content and data
 
-[Business Model Canvas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/bmc.md)
+[Business Model Canvas Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/bmc.md)
 
 ### Cognitive Walkthrough          
 **What**: An evaluation method in which people work through a set of representative tasks and ask questions about the task as they go.
@@ -38,7 +38,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **How**: Identified how users will hear about SNAP locations through their interactions on the new SNAP map to follow-up interactions to keep USDA SNAP top-of-mind
 
-[LINK](https:// )
+[Journey Map Artifact](https:// )
 
 ### Heuristic Evaluation   
 
@@ -48,7 +48,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **How**: Conducted 2 evaluations, 1) with the current SNAP Map to determine gaps in usability to inform the new prototype and 2) on the UI designs to inform the interactive prototype
 
-[See link](https://)
+[Heuristic Evaluation Artifacts](https://https://github.com/metrostarsystem/usda-dva/blob/master/documentation/heuristic.md)
 
 ###  Personas
    
@@ -57,7 +57,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 **Why**: To ground design in reality by forcing us to consider the goals, behaviors, and pain points of the people affected by our design decisions. Unlike marketing personas based on demographics or marketability, design personas describe how someone accomplishes goals.
 **How**:
 
-[See link](https:// )
+[User Personas Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md)
 
 ### Mental Modeling
 **What**: A simple reference model that correlates existing and potential interfaces with user behaviors.
