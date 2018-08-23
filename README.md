@@ -14,7 +14,7 @@ The goal of our **SNAP-MAP and Dashboard** is to improve accessibility for 43 mi
 
 [SNAP-MAP](https://www.usdacoe.com)
 
-[Dashboard Mockup](https://            )
+[Dashboard Mockup](https://www.usdacoe.com/assets/SNAP-dashboard.jpg)
 
 # Digital Services Playbook
 
