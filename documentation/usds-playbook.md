@@ -8,10 +8,8 @@ We used the U.S. Digital Services Playbook as a framework to guide the developme
 ](https://lh3.googleusercontent.com/yxZo4qcn_zfS-vgANblwkK8ypON12iC7hlNHSSkZ3HUTHwoVJOiIqctFvvXyvjpmtCV-BS8BFesW "USDA USDS Play 1")
 
 To understand the needs of our users, we developed **user personas** and **user stories** to identify how our prototype and dashboard can make their lives easier. 
-
-
-
 [User Personas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md)
+
 [User Stories](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-stories.md)
 # Play 2: Make it Simple and Intuitive
 ![
@@ -38,29 +36,33 @@ Not applicable, as this prototype was developed as a response to the USDA and GS
 ![
 ](https://lh3.googleusercontent.com/wxJqCgqlB148RyiQOME7IWXyYZGBSaDf2f6JQ7Z9wdH582caOXA_Eom6tPlTaXlalGDEsRD6-k6t "USDA USDS Play 6")
 
-Our Product Manager - Senior (Product Owner) is Jason Stoner. 
+Our Product Manager - Senior (Product Owner) is Jason Stoner.
+
 ![
 ](https://lh3.googleusercontent.com/_pSAzpkz9dfifXkm_G4wBYNAU0QFq8NOynsUtuWQoiM3KS-YW4NsPk6u4Kd__NsIdXxYNDdkSxlD "Jason Stoner - Project Manager - Senior")
+
 He unified the team by facilitating ideation and design activities that allowed us to identify the users and scope of the prototype. He also had the final authority when pivots needed to be made. 
 
 Jason Stoner has 15+ years leading digital teams. His experience spans the entire UX process for web and mobile projects from client interaction and collaboration, data collection, user and task analysis, information architecture, visual design, metrics, and analysis based on targeted user research.
 
 # Play 7 Bring in Experienced Teams
+![
+](https://lh3.googleusercontent.com/1kJSnLrQBwjH_HN6iZ9iqInlkKwq0i6AcnUzvmOzigdlK23FMJNE1GB6dAvIU6RXtRr_ttHApqH_ "USDA USDS Play 7")
+
 Our prototype team has day-to-day responsibilities delivering superior digital projects to high-profile federal customers. Each member of the team has supported contracts, which required digital resources to design and develop web and mobile solution, data strategy, DevOps, automation, continuous integration, and compliance with federal mandates including Section 508. 
-(https://lh3.googleusercontent.com/1kJSnLrQBwjH_HN6iZ9iqInlkKwq0i6AcnUzvmOzigdlK23FMJNE1GB6dAvIU6RXtRr_ttHApqH_ "USDS USDA Play 7")
 
 # Play 8 Choose a Modern Technology Stack
+![
+](https://lh3.googleusercontent.com/VZZ5rXfaU2mMsi4_izkIC37xo5IFYCoswMtXpWc5lsXCtEMAsji1QcDxdE5EtwlhNkv0YIkMwb39 "USDA USDS Play 9")
+
 We used a modern application stack to build the prototype.  That stack includes: 
 We developed SNAP-MAP with 9 modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
 
-![
-](https://lh3.googleusercontent.com/VZZ5rXfaU2mMsi4_izkIC37xo5IFYCoswMtXpWc5lsXCtEMAsji1QcDxdE5EtwlhNkv0YIkMwb39 "USDA USDS Play 9")
-
 # Play 9 Deploy in a Flexible Hosting Environment
-Our hosting environment is **Amazon Web Services (AWS)**.
-
 ![
 ](https://lh3.googleusercontent.com/VZZ5rXfaU2mMsi4_izkIC37xo5IFYCoswMtXpWc5lsXCtEMAsji1QcDxdE5EtwlhNkv0YIkMwb39 "USDA USDS Play 9")
+
+Our hosting environment is **Amazon Web Services (AWS)**.
 
 # Play 10 Automate Testing and Deployments
 ## **Gap**
