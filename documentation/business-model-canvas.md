@@ -12,7 +12,7 @@ Activities and attributes that what we want the prototype to actually do and hav
 
 ## Key Resources
 
-For the purposes of the prototype, we identified six key resources we needed for success.
+For the purposes of the prototype, we identified seven key resources we needed for success.
 - UX /Graphics Designer
 - Web Designer
 - Web Developer
