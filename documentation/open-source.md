@@ -15,4 +15,4 @@
 
 •	[expressjs](https://github.com/expressjs/express/blob/master/LICENSE)
 
-•	[sqlite](https://www.sqlite.org/copyright.html)
+•	[sqlite3](https://www.sqlite.org/copyright.html)
