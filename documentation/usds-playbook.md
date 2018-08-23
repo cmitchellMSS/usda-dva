@@ -67,6 +67,8 @@ We used a modern application stack to build the prototype.  That stack includes:
 We developed SNAP-MAP with 9 modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
 
 # Play 9 Deploy in a Flexible Hosting Environment
+![
+](https://lh3.googleusercontent.com/2Zy5bAiDIRneoUh4KDM1bpA6JnNBf6DXGlBbod-lr5gnuOuzoHKpdVLp4Hyw7wht56vmrQ2FqIXj "USDA USDS Play 9")
 
 Our hosting environment is **Amazon Web Services (AWS)**.
 
