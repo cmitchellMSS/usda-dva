@@ -24,10 +24,10 @@ He unified the team by facilitating ideation and design activities that allowed 
 
 Jason Stoner has 15+ years leading digital teams. His experience spans the entire UX process for web and mobile projects from client interaction and collaboration, data collection, user and task analysis, information architecture, visual design, metrics, and analysis based on targeted user research. 
 # Play 7 Bring in Experienced Teams
-Our prototype team has day-to-day responsibilities delivering superior digital projects to high-profile federal customers. Each member of the team has supported contracts, which required digital resources to design and develop web and mobile applications, DevOps, automation, continuous integration, and compliance with federal mandates including Section 508. 
+Our prototype team has day-to-day responsibilities delivering superior digital projects to high-profile federal customers. Each member of the team has supported contracts, which required digital resources to design and develop web and mobile solution, data strategy, DevOps, automation, continuous integration, and compliance with federal mandates including Section 508. 
 # Play 8 Choose a Modern Technology Stack
 We used a modern application stack to build the prototype.  That stack includes: 
-We developed SNAP-MAP with X modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
+We developed SNAP-MAP with 9 modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
 # Play 9 Deploy in a Flexible Hosting Environment
 Our hosting environment is **Amazon Web Services (AWS)**.
 # Play 10 Automate Testing and Deployments
