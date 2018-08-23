@@ -43,7 +43,7 @@ To ensure consistency and reduce redundancy while developing the prototype, our 
 [Style Reference Library](https:// )
 
 ## 6. Application Stack 
-We developed SNAP-MAP with X modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
+We developed SNAP-MAP with X modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, sqlite3, ngx-smart-modal, uswds, typescript, expressjs**
 
 ## 7. Usability Tests
 We conducted usability tests to **evaluate**, **iterate**, and **improve** our prototype by testing it on users. This is a vital usability practice, since it informs direct input on how actual users are interacting with the system.

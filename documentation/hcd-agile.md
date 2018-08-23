@@ -2,6 +2,13 @@
 We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum. 
 ![enter image description here](https://lh3.googleusercontent.com/Pd-WUAOXnHYGbVJtjcxez_D9-l9V9r3xoxUxRi58WPsEGOb1EenOCjrNb--KnTgbBphWwimLKpyN "Human Centered Design Process")
 ## Approaches & Methodologies
+### Agile Methodology
+We use the agile methodology aligned to HCD to deliver tasks against the protoype. This process begins with Discovery (sprint 0) and facilitates iterative development sprints, which build toward the delivered prototype. This also enables consistent feedback loops and designates appropriate lines of authority aligned to the [U.S. Digital Services Playbook.](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/usds-playbook.md)
+
+We use traditional **kanban** boards to design, manage, and visualize workflows.
+![
+](https://lh3.googleusercontent.com/Y52U3hhfcSqO6G75iWwpq4J6gcslJNFZnWbzXnqhOejpj5nNO_SDiWYsZ5W-HnvMqFCVbrcMbBDz "USDA Scrum Meeting")
+
 ### Business Model Canvas
 **What**: Aligns the organizational strategy and vision, business model, and operating models to ensure the digital products being created are aligned with a future oriented operating model to ensure success.
 
