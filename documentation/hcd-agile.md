@@ -12,7 +12,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 - Team Composition – Bringing passion, purpose and performance together with modern software development best practices
 - Relationships – Create flexibility and efficiency through modular building blocks such external API’s and partnerships to provide enhanced content and data
 
-[Business Model Canvas Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/bmc.md)
+[Business Model Canvas Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/business-model-canvas.md)
 
 ### Cognitive Walkthrough          
 **What**: An evaluation method in which people work through a set of representative tasks and ask questions about the task as they go.
