@@ -17,3 +17,5 @@ Our prototype ingests the following data sets:
 As part of our assessment, we identified data attributes: 
 ![
 ](https://lh3.googleusercontent.com/VThPnnyqrRjA3MjNys3BKFqA6VKF-ypUDpJWPnWWVUf4Eg7v4ZMBTrgwTZZB3GJLDyqYGlo0xMtp "USDA Data Attributes"). 
+
+Our team analyzed these data sets and the existing metrics to identify opportunities to improve efficiency and effectiveness. 
