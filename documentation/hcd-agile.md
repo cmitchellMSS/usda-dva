@@ -26,7 +26,7 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 
 **Why**: To get rapid, early feedback on whether a design solution is easy for a new or infrequent user to learn, and why it is or isn’t easy. This method is useful for catching big issues at any stage in the design process when you don’t have access to real users, but it is not a substitute for user evaluation.
 
-**How** Conducted 2 sessions, 1) with the existing SNAP-MAP to see how users navigated the current UI to determine gaps and opportunities for enhancement along with understanding any additional data users would want to see and 2) with the new prototype to see how users would navigate the UI and input data. 
+**How**: Conducted 2 sessions, 1) with the existing SNAP-MAP to see how users navigated the current UI to determine gaps and opportunities for enhancement along with understanding any additional data users would want to see and 2) with the new prototype to see how users would navigate the UI and input data. 
 
 ### Stakeholder and User Interviews
   
