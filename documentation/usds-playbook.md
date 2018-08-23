@@ -11,7 +11,7 @@ We developed a **user journey map** To address how our users would find, interac
 # Play 3 Make it Simple and Intuitive
 To build a prototype that enables our users to succeed the first time, we used the [U.S. Web Design System Components and Guidelines](https://designsystem.digital.gov/) as the foundation for our prototype.
 # Play 4 Build the service using agile and iterative practices
-Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace. 
+Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **SharePoint Online**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace. 
 # Play 5 Structure Budgets and Contracts to Support Delivery
 Not applicable, as this prototype was developed as a response to the USDA and GSA IT Modernization IT Centers of Excellence Digital Visualization and Analytics BPA. 
 # Play 6 Assign One Leader and Hold That Person Accountable
