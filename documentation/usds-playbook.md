@@ -8,6 +8,7 @@ We used the U.S. Digital Services Playbook as a framework to guide the developme
 ](https://lh3.googleusercontent.com/yxZo4qcn_zfS-vgANblwkK8ypON12iC7hlNHSSkZ3HUTHwoVJOiIqctFvvXyvjpmtCV-BS8BFesW "USDA USDS Play 1")
 
 To understand the needs of our users, we developed **user personas** and **user stories** to identify how our prototype and dashboard can make their lives easier. 
+
 [User Personas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md)
 
 [User Stories](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-stories.md)
@@ -36,7 +37,7 @@ Not applicable, as this prototype was developed as a response to the USDA and GS
 ![
 ](https://lh3.googleusercontent.com/wxJqCgqlB148RyiQOME7IWXyYZGBSaDf2f6JQ7Z9wdH582caOXA_Eom6tPlTaXlalGDEsRD6-k6t "USDA USDS Play 6")
 
-Our Product Manager - Senior (Product Owner) is Jason Stoner.
+**Our Product Manager - Senior (Product Owner) is Jason Stoner.**
 
 ![
 ](https://lh3.googleusercontent.com/_pSAzpkz9dfifXkm_G4wBYNAU0QFq8NOynsUtuWQoiM3KS-YW4NsPk6u4Kd__NsIdXxYNDdkSxlD "Jason Stoner - Project Manager - Senior")
@@ -66,7 +67,7 @@ Our hosting environment is **Amazon Web Services (AWS)**.
 
 # Play 10 Automate Testing and Deployments
 ![
-](https://lh3.googleusercontent.com/WaUCb3hrEWEpNivzQAXQzocS0Ru_zPFpno2Qi2Yd0x6pAJl6IF3-APMERAs7oQNiYWpGBbBm2SYY "USDA USDS Play 11")
+](https://lh3.googleusercontent.com/oOO7ALR8loNMvvtWLYtlOjiQe_yFPOeNIkx7hgrc27K5-2P2pedqf_HOHr6OkPNfa2zcK4fQkbLO "USDA USDS Play 10")
 
 We assessed the logic behind our SNAP-MAP prototype and felt that unit testing and basic automation for deployment was the right economic/cost balance. As a team, we focused on understanding the BPA and Task Orders and our MVP prototype vs. what a production level solution would require in terms of an automated testing framework to help test automation code across: **Reusability, Maintainability, and Stability**. For example, asking what would the cost of a framework leveraging **Serenity** to act as the wrapper on top of **Selenium** would be for this MVP vs. Unit Testing. 
 
