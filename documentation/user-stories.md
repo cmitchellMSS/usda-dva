@@ -7,7 +7,7 @@ User stories enable us to put people first by providing context around why certa
 - Rapid implementation
 - Reduce Risk
 
-We used the [user personas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md) we developed as part of our Human-Centered Design process as the foundation for our user stories. 
+We used the [user personas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md) we developed as part of our [Human-Centered Design](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md) process as the foundation for our user stories. 
 
 ## User Stories for SNAP Recipients
 ![
