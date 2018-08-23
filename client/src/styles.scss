@@ -13,7 +13,12 @@ ngx-smart-modal .overlay {
 }
 
 .nsm-content {
-  flex-direction: row !important;
+  //flex-direction: row !important;
+  display: block;
+}
+
+.nsm-body {
+  width: 100%;
 }
 
 .nsm-dialog-btn-close {
