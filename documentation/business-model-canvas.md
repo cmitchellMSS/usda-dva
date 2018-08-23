@@ -32,7 +32,7 @@ For the purposes of the prototype, we identified six key resources we needed for
 - Rapid Decision Support Analysis 
 
 ## Customer Relations
-Being the most efficient, effective, and customer-focused agency means understanding and integrating the customer experience into the prototype. We paid particular attention on the ability to easily gain feedback from target customers and how to develop seamless integrations and experiences. 
+Being the most efficient, effective, and customer-focused agency means understanding and integrating the customer experience into the prototype. We paid particular attention on the ability to easily gain feedback from target users and how to develop seamless integrations and experiences. 
 
 ## Channels
 Focuses on how we reach customers and how to make a product (or prototype) successful. For the prototype, it means maximizing existing channels like the website, APIs, and widgets. In addition, supplementing awareness using social media, events, and emails/newsletters. 
