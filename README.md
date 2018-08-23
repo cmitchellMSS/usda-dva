@@ -26,8 +26,8 @@ Our team followed the Digital Service playbook guideline as described in the lin
 We assigned one leader, our Project Manager – Senior (PM), Jason Stoner, who had the authority, responsibility, and was held accountable for the quality of our SNAP-MAP prototype and Dashboard Mockup. He was also responsible for defining the initial prototype concept and backlog priorities.
 
 ## 2. Assemble a Team
-We decided that we wanted to build a prototype that met the requirements for the BPA to leverage datasets from Data.gov, Social Media, and USDA web properties, but also included a solution that captured elements from Task Order 1, 2, and 3. Given this scope, we assembled a multidisciplinary team using 6 of the 18 labor categories (LCATs). The LCATs and hours used were 1) **Project Manager - Senior** (who served as our Product Manager) (42 Hours), 2) **UX/Graphics Designer** (40 Hours), 3) **Application Developer - Senior** (42 Hours), 4) **Web Designer** (56 Hours), 5) **Data Analyst - Senior** (32 Hours), 6) **Web Developer** (80 Hours)
-
+The SAIC Team built a prototype that met the requirements for the BPA to leverage data-sets from Data.gov, Social Media, and USDA web properties. We also included a solution that captured elements from Task Order 1, 2, and 3. We assembled a multidisciplinary team using 7 of the 18 labor categories LCATs and hours are outlined below: 
+0003A UX /Graphics Designer (10 hours); 0003D Web Designer (80 hours); 0003E Web Developer (80 hours); 0001B Project Manager- Senior (who served as our Product Manager) (6.5 hours); 0001C Scrum Master (10 hours); 0002B Data Analyst – Senior (30 hours); 0002A Data Analyst - Junior (60 hours)
 
 ## 3.  Understand Users
 To understand our users, we developed **user personas**, **user stories**, and **user journeys**, which were integrated as part of our overarching **Human-Centered Design** (HCD) process described in more detail below.
