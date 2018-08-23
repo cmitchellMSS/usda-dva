@@ -13,12 +13,12 @@ Activities and attributes that what we want the prototype to actually do and hav
 ## Key Resources
 
 For the purposes of the prototype, we identified six key resources we needed for success.
-- Project Manager - Senior (who served as our Product Manager)
-- UX/Graphics Designer
-- Application Developer - Senior
-- Web Designer
-- Data Analyst - Senior
-- Data Analyst - Junior
+- **Project Manager - Senior** (who served as our Product Manager)
+- **UX/Graphics Designer**
+- **Application Developer - Senior**
+- **Web Designer**
+- **Data Analyst - Senior**
+- **Web Developer**
 
 
 ## Value Prop
