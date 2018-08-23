@@ -5,14 +5,15 @@
 [Prototype repository and documentation](https://github.com/metrostarsystem/usda-dva)
 
 # Prototype Overview
-The goal of our **SNAP-MAP and Dashboard** is to improve accessibility for SNAP users, which currently find eligible retailers via a FLASH-Based map with Zip Files (inaccessible for most modern browsers and smart phones). To improve the voice of the customer (VOC) and customer understanding, we also identified areas to integrate the data into actionable insights for USDA stakeholders.
+The goal of our **SNAP-MAP and Dashboard** is to improve accessibility for 43 million SNAP users, which currently find eligible retailers via a FLASH-Based map with Zip Files (inaccessible for most modern browsers and smart phones). To improve the voice of the customer (VoC) and customer understanding, we also identified areas to integrate the data into actionable insights for USDA stakeholders.
 
 ## SNAP-MAP & Dashboard
 **SNAP-MAP** focuses on increasing Customer Experience (CX) for millions of citizens who use the SNAP program to feed their families. SNAP-MAP unifies three core data sets around farmers markets, retailers, and SNAP office locations. The result provides citizens with timely, accessible, and trustworthy resources. 
 
-The **Dashboard** will improve and expand data in meaningful ways, and can be used by the Secretary’s staff to create rapid, meaningful discussion for the VOC by pulling data across multiple data sets identified in our research. Citizens’ feedback provided via “Tell Sonny” fuels the dashboard with real-time content and enables continuous feedback.
+**Dashboard** improves and expands data in meaningful ways, and can be used by the Secretary’s staff to create rapid, meaningful discussion for the VoC by pulling data across multiple data sets identified in our research. Citizens’ feedback provided via “Tell Sonny” fuels the dashboard with real-time content and enables continuous feedback.
 
 [SNAP-MAP](https://www.usdacoe.com)
+
 [Dashboard Mockup](https://            )
 
 # Digital Services Playbook
