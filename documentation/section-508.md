@@ -7,4 +7,4 @@ Download the full reports below.
 
 [PDF Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508.pdf)
 
-[Download Detailed Excel Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508%20Issues.xlsx)
+[Detailed Excel Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508%20Issues.xlsx)
