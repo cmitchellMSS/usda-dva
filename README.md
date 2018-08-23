@@ -61,7 +61,7 @@ Our SNAP-MAP prototype works on multiple devices and is a responsive design. We 
 Please reference [install.md](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/install.md)
 
 ## 11. Open Source Licenses
-[NEED LINK](https://github.com/MetroStar-agile-delivery/snap-final/xxxxxxxxx)
+[Open Source Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/open-source.md)
 
 # Our Team
 Team SAIC offers key strengths to the USDA CoE for the USDA Data Visualization and Analytics BPA. 
