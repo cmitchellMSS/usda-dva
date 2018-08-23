@@ -62,7 +62,8 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 **What**: User archetypes based on conversations with real people.
 
 **Why**: To ground design in reality by forcing us to consider the goals, behaviors, and pain points of the people affected by our design decisions. Unlike marketing personas based on demographics or marketability, design personas describe how someone accomplishes goals.
-**How**:
+
+**How**: Researched target users based on data publicly available. Developed personas to illustrate diversity in the needs, demographics, income-levels, etc. of those target users.
 
 [User Personas Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md)
 
@@ -71,7 +72,7 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 
 **Why**: To help designers anticipate how design decisions might facilitate future behaviors.
 
-**How*: Through the Cognitive walkthroughs, interviews, and personas created basic mental models to inform the wireframes and interactivity.  
+**How**: Through the Cognitive walkthroughs, interviews, and personas created basic mental models to inform the wireframes and interactivity.  
 
 ### Wireframing
 
