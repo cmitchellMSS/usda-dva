@@ -89,3 +89,8 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 
 **How**: Used Top level task analysis and Tobii X2-60 Eye Tracking machine to validate business and design decisions with 3 users. We were able to verify efficiency of UI layout and ability to recover of error to reduce friction points.
 
+### Scrum is Fun
+![
+](https://lh3.googleusercontent.com/SYagpgpt9xF_OYVzTjKsfndRIULGe9jqLmcwhvnoqKX-DclQatKkhR7j0nYhZpiXgjNHafL20K5A "Scrum is Fun")
+
+
