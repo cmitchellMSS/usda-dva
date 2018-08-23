@@ -14,38 +14,36 @@ To understand the needs of our users, we developed **user personas** and **user 
 [User Personas](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-personas.md)
 [User Stories](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-stories.md)
 # Play 2: Make it Simple and Intuitive
-We developed a **user journey map** To address how our users would find, interact with, and recommend the services available in our prototype. 
-
 ![
 ](https://lh3.googleusercontent.com/u_uCFA-hHhTg9bwXamVGt76h6lwOsi-nPZ1MQIIoGSjodB4spcbCwy_zSPZP8PItDc2mymNuA-xB "USDA USDS Play 2")
 
-# Play 3 Make it Simple and Intuitive
-To build a prototype that enables our users to succeed the first time, we used the [U.S. Web Design System Components and Guidelines](https://designsystem.digital.gov/) as the foundation for our prototype.
+We developed a **user journey map** To address how our users would find, interact with, and recommend the services available in our prototype. 
 
+# Play 3 Make it Simple and Intuitive
 ![
 ](https://lh3.googleusercontent.com/N2hOtgFRhcggKRuvjlXgY9tBIg26mqH6lmKnvEcHAfUeqo68LlQKjdWteYAb3epQOgpePFZQA_lu "USDA USDS Play 3")
 
-# Play 4 Build the service using agile and iterative practices
-Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **SharePoint Online**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace. 
+To build a prototype that enables our users to succeed the first time, we used the [U.S. Web Design System Components and Guidelines](https://designsystem.digital.gov/) as the foundation for our prototype.
 
+# Play 4 Build the service using agile and iterative practices
 ![
 ](https://lh3.googleusercontent.com/085FUkWD6nqFKsuBRDySMWUIOipo3E1qtMT5Y7uRWbiLJinDsyArhG79dO3ULDqbuJuckjlA1yny "USDA USDS Play 4")
+
+Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **SharePoint Online**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace. 
 
 # Play 5 Structure Budgets and Contracts to Support Delivery
 Not applicable, as this prototype was developed as a response to the USDA and GSA IT Modernization IT Centers of Excellence Digital Visualization and Analytics BPA. 
 
 # Play 6 Assign One Leader and Hold That Person Accountable
-Our Product Manager - Senior (Product Owner) is Jason Stoner. 
+![
+](https://lh3.googleusercontent.com/wxJqCgqlB148RyiQOME7IWXyYZGBSaDf2f6JQ7Z9wdH582caOXA_Eom6tPlTaXlalGDEsRD6-k6t "USDA USDS Play 6")
 
+Our Product Manager - Senior (Product Owner) is Jason Stoner. 
 ![
 ](https://lh3.googleusercontent.com/_pSAzpkz9dfifXkm_G4wBYNAU0QFq8NOynsUtuWQoiM3KS-YW4NsPk6u4Kd__NsIdXxYNDdkSxlD "Jason Stoner - Project Manager - Senior")
-
 He unified the team by facilitating ideation and design activities that allowed us to identify the users and scope of the prototype. He also had the final authority when pivots needed to be made. 
 
 Jason Stoner has 15+ years leading digital teams. His experience spans the entire UX process for web and mobile projects from client interaction and collaboration, data collection, user and task analysis, information architecture, visual design, metrics, and analysis based on targeted user research.
-
-![
-](https://lh3.googleusercontent.com/wxJqCgqlB148RyiQOME7IWXyYZGBSaDf2f6JQ7Z9wdH582caOXA_Eom6tPlTaXlalGDEsRD6-k6t "USDA USDS Play 6")
 
 # Play 7 Bring in Experienced Teams
 Our prototype team has day-to-day responsibilities delivering superior digital projects to high-profile federal customers. Each member of the team has supported contracts, which required digital resources to design and develop web and mobile solution, data strategy, DevOps, automation, continuous integration, and compliance with federal mandates including Section 508. 
