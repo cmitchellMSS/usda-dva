@@ -77,7 +77,7 @@ We also wrote **Windows Batch** scripts for deploying our prototype and leverage
 
 We contacted and engaged our Director of Contracts and Legal Counsel and pitched our MVP solution, to include user stories to determine whether a System of Records Notice (SORN), Privacy Impact Assessment, and other internal requirements.
 
-It was determined that the data collected, secured, and used did not contain any Personally identifiable information (PII). We leveraged our AWS hosting infrastructure (Availability Zone us-east) and AWS security features to comply with industry standards for this project. We also purchased a domain http://www.usdacoe.com and used a single-domain Standard SSL.
+It was determined that the data collected, secured, and used did not contain any Personally identifiable information (PII). We leveraged our AWS hosting infrastructure (Availability Zone us-east) and AWS security features to comply with industry standards for this project. We also purchased a domain https://www.usdacoe.com and used a single-domain Standard SSL.
 
 # Play 12 Use Data to Drive Decisions
 
