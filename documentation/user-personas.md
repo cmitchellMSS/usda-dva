@@ -1,4 +1,11 @@
 # User Personas
+Personas are fictional representations we use to reflect who are target users are, their unique needs, and how they'll interact with our prototype. Personas are developed (at a high level) by: 
+- Identifying and researching target users
+- Developing a hypothesis
+- Describing the context around the challenges they need to overcome
+- Making continuous adjustments
+
+
 ![
 ](https://lh3.googleusercontent.com/gVaw2RCla05UHxnP0PBTkXj-2U4UntSsmnxWycfbYT7C7uIZg9483pnxsL9cqPMMgP0wC9RI5nPq "User Persona - Joe")
 ![
