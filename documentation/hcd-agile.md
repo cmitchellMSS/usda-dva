@@ -1,7 +1,6 @@
 # Human-Centered Design (HCD) & Agile
 We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum. 
-**Include link to Snap Retail Locator as baseline**
- 
+![enter image description here](https://lh3.googleusercontent.com/Pd-WUAOXnHYGbVJtjcxez_D9-l9V9r3xoxUxRi58WPsEGOb1EenOCjrNb--KnTgbBphWwimLKpyN "Human Centered Design Process")
 ## Approaches & Methodologies
 ### Business Model Canvas
 **What**: Aligns the organizational strategy and vision, business model, and operating models to ensure the digital products being created are aligned with a future oriented operating model to ensure success.
@@ -38,7 +37,8 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **How**: Identified how users will hear about SNAP locations through their interactions on the new SNAP map to follow-up interactions to keep USDA SNAP top-of-mind
 
-[Journey Map Artifact](https:// )
+ ![
+](https://lh3.googleusercontent.com/lv2NHzriL_yufZKs7OddjoshTZ6Xc8H7n8KrScX-Ri80Ir9d4bL3GZElQMtwi4315CgPNwrYJNlq "USDA User Journey")
 
 ### Heuristic Evaluation   
 
