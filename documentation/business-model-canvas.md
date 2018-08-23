@@ -40,7 +40,7 @@ Focuses on how we reach customers and how to make a product (or prototype) succe
 ## Customer Segments
 
 ### Internal
-- SEG. of USDA
+- SEC. of USDA
 - Case Workers
 - Aid Workers
 - Field Officers
