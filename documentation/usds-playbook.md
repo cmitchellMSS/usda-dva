@@ -60,8 +60,6 @@ We used a modern application stack to build the prototype.  That stack includes:
 We developed SNAP-MAP with 9 modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, esri-leaflet, ngx-smart-modal, uswds, typescript, expressjs**
 
 # Play 9 Deploy in a Flexible Hosting Environment
-![
-](https://lh3.googleusercontent.com/VZZ5rXfaU2mMsi4_izkIC37xo5IFYCoswMtXpWc5lsXCtEMAsji1QcDxdE5EtwlhNkv0YIkMwb39 "USDA USDS Play 9")
 
 Our hosting environment is **Amazon Web Services (AWS)**.
 
@@ -77,11 +75,21 @@ We also wrote **Windows Batch** scripts for deploying our prototype and leverage
 ![
 ](https://lh3.googleusercontent.com/WaUCb3hrEWEpNivzQAXQzocS0Ru_zPFpno2Qi2Yd0x6pAJl6IF3-APMERAs7oQNiYWpGBbBm2SYY "USDA USDS Play 11")
 
+We contacted and engaged our Director of Contracts and Legal Counsel and pitched our MVP solution, to include user stories to determine whether a System of Records Notice (SORN), Privacy Impact Assessment, and other internal requirements.
+
+It was determined that the data collected, secured, and used did not contain any Personally identifiable information (PII). We leveraged our AWS hosting infrastructure (Availability Zone us-east) and AWS security features to comply with industry standards for this project. We also purchased a domain www.usdacoe.comse and used a single-domain Standard SSL.
+
 # Play 12 Use Data to Drive Decisions
 ![
 ](https://lh3.googleusercontent.com/oOO7ALR8loNMvvtWLYtlOjiQe_yFPOeNIkx7hgrc27K5-2P2pedqf_HOHr6OkPNfa2zcK4fQkbLO "USDA USDS Play 12")
-## **Gap**
+Our approach for Play 12 is focused on learning, experimenting and testing other features and capabilities to enhance SNAP-MAP visitors for production ready environment. 
+
+We leveraged AWS native to monitor system-level resource utilization in real time to measure activities (i.e., response time, latency, throughput, and error rates) to ensure monitoring can measure median, 95th percentile, and 98th percentile performance. We also created automated alerts with the ability to send Alarms via email on these monitoring activities. We use Google Analytics for real-time monitoring of user behaviors (Mobile Traffic, Site Speed, Tell Sonny Conversions, Benchmarking, Demographics, New vs. Returning, and Social Traffic) for aggregated determination on whether the service meets user experience needs. We did not publish these reports externally and will be using them internally only. 
 # Play 13 Default to Open
 ![
 ](https://lh3.googleusercontent.com/oOO7ALR8loNMvvtWLYtlOjiQe_yFPOeNIkx7hgrc27K5-2P2pedqf_HOHr6OkPNfa2zcK4fQkbLO "USDA USDS Play 13")
-## **Gap**
+
+For our prototype we used open source Visual Studio Code for debugging, and Built in Integration for Git. We used **Slack** for tracking issues and bugs vs. Git for bug tracking. Understanding that a production-ready environment would extend and leverage **GitHub** for bug tracking. We leveraged web services from USDA to consume selected data endpoints for our MVP prototype. 
+
+For the production-ready, we would extend and develop **new APIs** to integrate 3rd Party Tools (i.e., **SpagoBI, PowerBI, or Tableau** for secure external use. We documented all data attributes for our MVP solution and plan to develop a new data dictionary and data schema for our production ready solution, with all the data generated being open source and made available to reuse with no cost associated.  
+
