@@ -5,4 +5,4 @@ We ran a 508 Compliance report against our prototype using the tool Siteimprove.
 
 Download the full reports below.
 PDF Report [View PDF Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508.pdf)
-Detailed Excel Report [View Detailed Excel Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508%20Issues.xlsx)
+Detailed Excel Report [Download Detailed Excel Report](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/USDA%20Prototype%20Section%20508%20Issues.xlsx)
