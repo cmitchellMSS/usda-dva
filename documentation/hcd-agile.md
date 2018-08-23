@@ -44,8 +44,8 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 
 **How**: Identified how users will hear about SNAP locations through their interactions on the new SNAP-MAP to follow-up interactions to keep USDA SNAP top-of-mind
 
- ![
-](https://lh3.googleusercontent.com/lv2NHzriL_yufZKs7OddjoshTZ6Xc8H7n8KrScX-Ri80Ir9d4bL3GZElQMtwi4315CgPNwrYJNlq "USDA User Journey")
+![
+](https://lh3.googleusercontent.com/ach2yu6rqBL2PA3voQltm7m2TRw5lhgaigLD0gedN-3aAgT6NQVi26MB40mnVbuiDs1kdX56A-Aa "USDA Prototype - Journey Map")
 
 ### Heuristic Evaluation   
 
