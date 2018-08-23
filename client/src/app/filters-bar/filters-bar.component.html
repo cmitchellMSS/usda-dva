@@ -1,11 +1,14 @@
-<div class="filter filter-retailer" [class.active]="locationsFilterState['retail']" (click)="toggleLocationFilter('retail')">
-  <span></span> Retailers
+<div class="filter filter-retailer" [class.active]="locationsFilterState['retail']" (click)="toggleLocationFilter('retail')"
+    (keyup.enter)="toggleLocationFilter('retail')" tabindex="0">
+    <span></span> Retailers
 </div>
 
-<div class="filter filter-market" [class.active]="locationsFilterState['market']" (click)="toggleLocationFilter('market')">
+<div class="filter filter-market" [class.active]="locationsFilterState['market']" (click)="toggleLocationFilter('market')"
+    (keyup.enter)="toggleLocationFilter('market')" tabindex="0">
     <span></span> Farmers Markets
 </div>
 
-<div class="filter filter-office" [class.active]="locationsFilterState['office']" (click)="toggleLocationFilter('office')">
+<div class="filter filter-office" [class.active]="locationsFilterState['office']" (click)="toggleLocationFilter('office')"
+    (keyup.enter)="toggleLocationFilter('office')" tabindex="0">
     <span></span> Offices
 </div>
