@@ -41,8 +41,6 @@ We leveraged four core Human-Centered Design (HCD) techniques: 1) **Business Mod
 ## 5. Styles and Patterns
 To ensure consistency and reduce redundancy while developing the prototype, our team leveraged the [U.S. Web Design Standards](https://designsystem.digital.gov/) and the [USDA Digital Style Guide](https://www.usda.gov/media/digital/digital-style-guide). These resources enabled us to incorporate the best practices and ensure accessibility was built in from the beginning.
 
-[Style Reference Library](https:// )
-
 ## 6. Application Stack 
 We developed SNAP-MAP with X modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, sqlite3, ngx-smart-modal, uswds, typescript, expressjs**
 
@@ -61,6 +59,7 @@ Our SNAP-MAP prototype works on multiple devices and is a responsive design. We 
 Please reference [install.md](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/install.md)
 
 ## 11. Open Source Licenses
+We used a variety of open source tools to build our prototype. 
 [Open Source Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/open-source.md)
 
 # Our Team
