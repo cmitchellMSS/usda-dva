@@ -52,7 +52,7 @@ To ensure consistency and reduce redundancy while developing the prototype, our 
 We developed SNAP-MAP with 9 **open source** technologies: **angular-cli, angular, node, leaflet, sqlite3, ngx-smart-modal, uswds, typescript, expressjs**
 
 ## 7. Usability Tests
-We conducted usability tests to **evaluate**, **iterate**, and **improve** our prototype by testing it on users. This is a vital usability practice, since it informs direct input on how actual users are interacting with the system.
+We conducted [usability tests](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md) to **evaluate**, **iterate**, and **improve** our prototype by testing it on users. This is a vital usability practice, since it informs direct input on how actual users are interacting with the system.
 
 ## 8.  Iterate
 Our team needed to move quickly and make informed decisions. To do this, we leveraging **agile scrum** to rapidly identify gaps and areas for improvement without delaying progress.
