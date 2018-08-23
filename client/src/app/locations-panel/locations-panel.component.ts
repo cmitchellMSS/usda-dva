@@ -14,7 +14,6 @@ export class LocationsPanelComponent implements OnInit {
 
   ngOnInit() {
     this.locationService.locations.subscribe(locations => {
-      console.log(locations);
       this.locations = locations;
     });
   }

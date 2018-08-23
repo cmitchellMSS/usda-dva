@@ -4,7 +4,7 @@
   </h4>
 </div>
 
-<div class="address">
+<address>
   <div *ngIf="location.address1">{{location.address1}}</div>
   <div *ngIf="location.address2">{{location.address2}}</div>
   <div>
@@ -12,7 +12,7 @@
     <span *ngIf="location.state">{{location.state}} </span>
     <span *ngIf="location.zip">{{location.zip}}</span>
   </div>
-</div>
+</address>
 
 <div class="website" *ngIf="location.website">
   <a [attr.href]="location.website">Visit Website</a>
