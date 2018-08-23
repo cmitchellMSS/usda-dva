@@ -126,7 +126,8 @@ export class SnapMapComponent implements OnInit {
 
     for (const location of locations) {
       const marker = L.marker(location, {
-        icon: icons[location.kind]
+        icon: icons[location.kind],
+        alt: location.name
       })
         .bindPopup(`
           <strong>${location.name}</strong><br />

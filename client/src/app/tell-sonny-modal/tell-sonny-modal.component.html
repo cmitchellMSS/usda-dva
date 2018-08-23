@@ -1,6 +1,8 @@
-<ngx-smart-modal #tellSonnyModal [identifier]="'tellSonnyModal'">
-  <h1>Tell Sonny about SNAP Map</h1>
-  <p>
+<ngx-smart-modal #tellSonnyModal [identifier]="'tellSonnyModal'" (onOpen)="onOpen()">
+
+  <h1 id="tsm-dialog-title">Tell Sonny about SNAP Map</h1>
+
+  <p id="tsm-dialog-description">
     Secretary Sonny Perdue wants to hear from you about the customer service you receive from USDA. Your comment and ratings
     for this new capability will help us find better ways to increase customer experience with the voice of the customer.
   </p>

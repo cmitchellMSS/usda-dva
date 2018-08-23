@@ -1,6 +1,8 @@
-<ngx-smart-modal #tellSonnyLocationModal [identifier]="'tellSonnyLocationModal'">
-  <h1>Tell Sonny About Local Retailers</h1>
-  <p>Secretary Sonny Perdue wants to hear from you about local retailers in your community.</p>
+<ngx-smart-modal #tellSonnyLocationModal [identifier]="'tellSonnyLocationModal'" (onOpen)="onOpen()">
+
+  <h1 id="tslm-dialog-title">Tell Sonny About Local Retailers</h1>
+
+  <p id="tslm-dialog-description">Secretary Sonny Perdue wants to hear from you about local retailers in your community.</p>
 
   <label for="experience-text">
     What do you think of this retailer? (limit 140 characters)
@@ -9,6 +11,6 @@
 
   <label>Rate this retailer</label>
   <app-rating-control></app-rating-control>
-  
+
   <button (click)="submit()">Send Feedback</button>
 </ngx-smart-modal>
