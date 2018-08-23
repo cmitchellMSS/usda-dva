@@ -12,6 +12,10 @@ ngx-smart-modal .overlay {
   z-index: 10000 !important;
 }
 
+.nsm-content {
+  flex-direction: row !important;
+}
+
 .nsm-dialog-btn-close {
   margin: 0 !important;
   padding: 1px 6px !important;
