@@ -52,6 +52,8 @@ Jason Stoner has 15+ years leading digital teams. His experience spans the entir
 
 Our prototype team has day-to-day responsibilities delivering superior digital projects to high-profile federal customers. Each member of the team has supported contracts, which required digital resources to design and develop web and mobile solution, data strategy, DevOps, automation, continuous integration, and compliance with federal mandates including Section 508. 
 
+[Section 508 Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/section-508.md)
+
 # Play 8 Choose a Modern Technology Stack
 ![
 ](https://lh3.googleusercontent.com/VZZ5rXfaU2mMsi4_izkIC37xo5IFYCoswMtXpWc5lsXCtEMAsji1QcDxdE5EtwlhNkv0YIkMwb39 "USDA USDS Play 9")
