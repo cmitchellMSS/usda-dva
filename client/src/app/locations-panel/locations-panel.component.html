@@ -1,3 +1,6 @@
-<h2>Locations</h2>
+<h1>Locations</h1>
 
-<app-location *ngFor="let location of locations" [location]="location"></app-location>
+<ng-template ngFor let-location [ngForOf]="locations" let-isLast="last">
+  <app-location [location]="location"></app-location>
+  <hr *ngIf="!isLast" />
+</ng-template>

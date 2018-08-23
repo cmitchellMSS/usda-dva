@@ -1,19 +1,19 @@
-span {
+.star {
   display: inline-block;
   width: 20px;
   height: 20px;
   background: url('/assets/star-icon-red.svg');
 
-  &.selected ~ span {
+  &.selected ~ .star {
     background: url('/assets/star-icon-grey.svg');
   }
 }
 
 :host:not(.static):hover {
-  > span {
+  > .star {
     background: url('/assets/star-icon-red.svg') !important;
     
-    &:hover ~ span {
+    &:hover ~ .star {
       background: url('/assets/star-icon-grey.svg') !important;
     }
   }
