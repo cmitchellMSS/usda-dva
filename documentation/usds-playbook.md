@@ -28,7 +28,9 @@ To build a prototype that enables our users to succeed the first time, we used t
 ![
 ](https://lh3.googleusercontent.com/085FUkWD6nqFKsuBRDySMWUIOipo3E1qtMT5Y7uRWbiLJinDsyArhG79dO3ULDqbuJuckjlA1yny "USDA USDS Play 4")
 
-Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **SharePoint Online**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace. 
+Developing a prototype in less than four weeks required an experienced agile team. We developed a war room, held daily standups, and used tools like **Slack**, **SharePoint Online**, **Kanban**, and **GitHub** to ensure incremental development and maintain a fast pace.
+
+[HCD-Agile Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md)
 
 # Play 5 Structure Budgets and Contracts to Support Delivery
 Not applicable, as this prototype was developed as a response to the USDA and GSA IT Modernization IT Centers of Excellence Digital Visualization and Analytics BPA. 
