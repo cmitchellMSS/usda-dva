@@ -19,7 +19,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **Why**: To get rapid, early feedback on whether a design solution is easy for a new or infrequent user to learn, and why it is or isn’t easy. This method is useful for catching big issues at any stage in the design process when you don’t have access to real users, but it is not a substitute for user evaluation.
 
-**How** Conducted 2 sessions, 1) with the existing SNAP Map to see how users navigated the current UI to determine gaps and opportunities for enhancement along with understanding any additional data users would want to see and 2) with the new prototype to see how users would navigate the UI and input data. 
+**How** Conducted 2 sessions, 1) with the existing SNAP-MAP to see how users navigated the current UI to determine gaps and opportunities for enhancement along with understanding any additional data users would want to see and 2) with the new prototype to see how users would navigate the UI and input data. 
 
 ### Stakeholder and User Interviews
   
@@ -27,7 +27,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **Why**: To build consensus about the problem statement and research objectives.
 
-**How**: Conducted 2 sessions with the existing SNAP Map with 1) identified team Product Owner to create a wish list of requirements and 2) with 3 identified users to align user needs to agency goals. The details were turned into user stories and prioritized with the Product Owners
+**How**: Conducted 2 sessions with the existing SNAP-MAP with 1) identified team Product Owner to create a wish list of requirements and 2) with 3 identified users to align user needs to agency goals. The details were turned into user stories and prioritized with the Product Owners
 
 ### Journey Map
  
@@ -35,7 +35,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **Why**: To provide design teams with a bird’s-eye view of a service that helps them see the sequence of interactions that make up a user’s experience including the complexity, successes, pain points, and emotions users experience along the way.
 
-**How**: Identified how users will hear about SNAP locations through their interactions on the new SNAP map to follow-up interactions to keep USDA SNAP top-of-mind
+**How**: Identified how users will hear about SNAP locations through their interactions on the new SNAP-MAP to follow-up interactions to keep USDA SNAP top-of-mind
 
  ![
 ](https://lh3.googleusercontent.com/lv2NHzriL_yufZKs7OddjoshTZ6Xc8H7n8KrScX-Ri80Ir9d4bL3GZElQMtwi4315CgPNwrYJNlq "USDA User Journey")
@@ -46,7 +46,7 @@ We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum.
 
 **Why**: To quickly identify common design problems that make websites hard to use without conducting more involved user research.
 
-**How**: Conducted 2 evaluations, 1) with the current SNAP Map to determine gaps in usability to inform the new prototype and 2) on the UI designs to inform the interactive prototype
+**How**: Conducted 2 evaluations, 1) with the current SNAP-MAP to determine gaps in usability to inform the new prototype and 2) on the UI designs to inform the interactive prototype
 
 [Heuristic Evaluation Artifacts](https://https://github.com/metrostarsystem/usda-dva/blob/master/documentation/heuristic.md)
 
