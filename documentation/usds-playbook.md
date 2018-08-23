@@ -65,10 +65,22 @@ We developed SNAP-MAP with 9 modern, **open source** technologies most appropria
 Our hosting environment is **Amazon Web Services (AWS)**.
 
 # Play 10 Automate Testing and Deployments
-## **Gap**
+![
+](https://lh3.googleusercontent.com/WaUCb3hrEWEpNivzQAXQzocS0Ru_zPFpno2Qi2Yd0x6pAJl6IF3-APMERAs7oQNiYWpGBbBm2SYY "USDA USDS Play 11")
+
+We assessed the logic behind our SNAP-MAP prototype and felt that unit testing and basic automation for deployment was the right economic/cost balance. As a team, we focused on understanding the BPA and Task Orders and our MVP prototype vs. what a production level solution would require in terms of an automated testing framework to help test automation code across: **Reusability, Maintainability, and Stability**. For example, asking what would the cost of a framework leveraging **Serenity** to act as the wrapper on top of **Selenium** would be for this MVP vs. Unit Testing. 
+
+We also wrote **Windows Batch** scripts for deploying our prototype and leveraged others across our company to take our solution and test how fast they can deploy the solution in the same **AWS environment with over 95% success rate**. 
+
 # Play 11 Manage Security and Privacy Through Reusable Processes
-## **Gap**
+![
+](https://lh3.googleusercontent.com/WaUCb3hrEWEpNivzQAXQzocS0Ru_zPFpno2Qi2Yd0x6pAJl6IF3-APMERAs7oQNiYWpGBbBm2SYY "USDA USDS Play 11")
+
 # Play 12 Use Data to Drive Decisions
+![
+](https://lh3.googleusercontent.com/oOO7ALR8loNMvvtWLYtlOjiQe_yFPOeNIkx7hgrc27K5-2P2pedqf_HOHr6OkPNfa2zcK4fQkbLO "USDA USDS Play 12")
 ## **Gap**
 # Play 13 Default to Open
+![
+](https://lh3.googleusercontent.com/oOO7ALR8loNMvvtWLYtlOjiQe_yFPOeNIkx7hgrc27K5-2P2pedqf_HOHr6OkPNfa2zcK4fQkbLO "USDA USDS Play 13")
 ## **Gap**
