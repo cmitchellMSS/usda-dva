@@ -41,7 +41,7 @@ To understand our users, we developed **user personas**, **user stories**, and *
 [User Stories](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/user-stories.md)
 
 ## 4. HCD Process
-We leveraged four core Human-Centered Design (HCD) techniques: 1) **Business Model Generation**, 2) **Lean UX**, 3) **HCD**, 4) **Agile Development**
+We leveraged four core HCD techniques: 1) **Business Model Generation**, 2) **Lean UX**, 3) **HCD**, 4) **Agile Development**
 
 [Human Centered Design & Agile](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md)
 
@@ -49,7 +49,7 @@ We leveraged four core Human-Centered Design (HCD) techniques: 1) **Business Mod
 To ensure consistency and reduce redundancy while developing the prototype, our team leveraged the [U.S. Web Design Standards](https://designsystem.digital.gov/) and the [USDA Digital Style Guide](https://www.usda.gov/media/digital/digital-style-guide). These resources enabled us to incorporate the best practices and ensure accessibility was built in from the beginning.
 
 ## 6. Application Stack 
-We developed SNAP-MAP with X modern, **open source** technologies most appropriate to implement the prototype: **angular-cli, angular, node, leaflet, sqlite3, ngx-smart-modal, uswds, typescript, expressjs**
+We developed SNAP-MAP with 9 **open source** technologies: **angular-cli, angular, node, leaflet, sqlite3, ngx-smart-modal, uswds, typescript, expressjs**
 
 ## 7. Usability Tests
 We conducted usability tests to **evaluate**, **iterate**, and **improve** our prototype by testing it on users. This is a vital usability practice, since it informs direct input on how actual users are interacting with the system.
