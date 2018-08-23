@@ -1,5 +1,5 @@
 # Human-Centered Design (HCD) & Agile
-We use a custom Human-Centered Design (HCD) process aligned to Agile Scrum. 
+We use a tailored Human-Centered Design (HCD) process aligned to Agile Scrum. 
 ![enter image description here](https://lh3.googleusercontent.com/Pd-WUAOXnHYGbVJtjcxez_D9-l9V9r3xoxUxRi58WPsEGOb1EenOCjrNb--KnTgbBphWwimLKpyN "Human Centered Design Process")
 ## Approaches & Methodologies
 ### Agile Methodology
