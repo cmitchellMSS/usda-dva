@@ -43,7 +43,7 @@ To understand our users, we developed **user personas**, **user stories**, and *
 ## 4. HCD Process
 We leveraged four core HCD techniques: 1) **Business Model Generation**, 2) **Lean UX**, 3) **HCD**, 4) **Agile Development**
 
-[Human Centered Design & Agile](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md)
+[Human-Centered Design & Agile](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/hcd-agile.md)
 
 ## 5. Styles and Patterns
 To ensure consistency and reduce redundancy while developing the prototype, our team leveraged the [U.S. Web Design Standards](https://designsystem.digital.gov/) and the [USDA Digital Style Guide](https://www.usda.gov/media/digital/digital-style-guide). These resources enabled us to incorporate the best practices and ensure accessibility was built in from the beginning.
