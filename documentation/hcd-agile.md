@@ -55,7 +55,7 @@ We use traditional **kanban** boards to design, manage, and visualize workflows.
 
 **How**: Conducted 2 evaluations, 1) with the current SNAP-MAP to determine gaps in usability to inform the new prototype and 2) on the UI designs to inform the interactive prototype
 
-[Heuristic Evaluation Artifacts](https://https://github.com/metrostarsystem/usda-dva/blob/master/documentation/heuristic.md)
+[Heuristic Evaluation Artifacts](https://github.com/metrostarsystem/usda-dva/blob/master/documentation/heuristic.md)
 
 ###  Personas
    
